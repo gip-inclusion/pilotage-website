@@ -1,0 +1,1 @@
+"use strict";var stickyNav=$("#header");stickyNav.data("top",stickyNav.offset().top),$(window).on("load",function(){}),$(window).on("resize orientationchange",function(){}),$(window).on("scroll",function(){}),$("[data-toggle=burger]").on("click tap",function(t){t.preventDefault(),stickyNav.toggleClass("is-opened")});
