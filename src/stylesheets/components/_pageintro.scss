@@ -1,4 +1,4 @@
-.c-assistance-intro {
+.c-pageintro {
   padding-top: map-get($spacers, 3);
   padding-bottom: map-get($spacers, 4);
 
@@ -27,13 +27,11 @@
   }
 
   &__col {
-    &--article {
-      article {
-        text-align: center;
-      }
+    &--title {
+      text-align: center;
 
       h1 {
-        @extend .mb-2;
+        @extend .mb-0;
       }
     }
   }

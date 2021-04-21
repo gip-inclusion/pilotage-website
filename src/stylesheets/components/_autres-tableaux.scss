@@ -1,0 +1,49 @@
+.c-autres-tableaux {
+  padding-top: map-get($spacers, 3);
+  padding-bottom: map-get($spacers, 4);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 6);
+  }
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    &--article {
+      article {
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+          max-width: 540px;
+        }
+      }
+
+      p {
+        margin-bottom: map-get($spacers, 4);
+      }
+    }
+
+    &--figure {
+      figure {
+        @extend .mb-3;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0 !important;
+          max-width: 250px;
+        }
+      }
+    }
+
+    &__cta {
+      @extend .mb-0;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.c-services {
+.c-tableaux {
   padding-top: map-get($spacers, 4);
   padding-bottom: map-get($spacers, 6);
 
@@ -9,16 +9,31 @@
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-up(xl) {
+      overflow: initial;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 90px;
+      right: -40px;
+      width: 99px;
+      height: 120px;
+      background-image: url('../images/tableaux-visuel-01.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__col {
     &--title {
       text-align: center;
-
-      p {
-        @extend .h5;
-        line-height: $line-height-base;
-      }
     }
 
     &--grid {
@@ -33,43 +48,36 @@
         grid-column-gap: map-get($spacers, 5);
         grid-row-gap: 0;
         margin: map-get($spacers, 6) 0 map-get($spacers, 5) 0;
+        min-height: 280px;
       }
 
       > div {
-        @extend .px-3;
-        @extend .pt-3;
-        @extend .pb-2;
+        @extend .px-4;
+        @extend .pt-4;
+        @extend .pb-3;
         border-radius: $border-radius-lg;
         box-shadow: $box-shadow-lg;
         transition: $transition-base;
+        border-bottom: 10px solid $yellow;
+        background: no-repeat top left url('../images/tableaux-visuel-02.png'), $white no-repeat right center url('../images/tableaux-visuel-03.png');
 
         &:hover {
           box-shadow: $box-shadow-xl;
         }
+      }
 
-        &:first-child {
-          border-bottom: 10px solid $blue;
-        }
+      h3 {
+        margin-bottom: map-get($spacers, 4);
 
-        &:nth-child(2) {
-          border-bottom: 10px solid $green;
-        }
-
-        &:nth-child(3) {
-          border-bottom: 10px solid $pink;
-        }
-
-        &:nth-child(4) {
-          border-bottom: 10px solid $yellow;
+        span {
+          @extend .mr-2;
+          color: $yellow;
         }
       }
-    }
 
-    &__title {
-      @extend .mb-0;
-
-      img {
-        transform: translate(-35px, -30px);
+      p {
+        @extend .h5;
+        line-height: $line-height-base;
       }
     }
 
