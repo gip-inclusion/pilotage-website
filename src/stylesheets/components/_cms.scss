@@ -1,10 +1,18 @@
-.c-cms {
-  padding-top: map-get($spacers, 3);
+.c-cms:last-of-type {
   padding-bottom: map-get($spacers, 4);
 
   @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 3);
     padding-bottom: map-get($spacers, 6);
+  }
+}
+
+.c-cms {
+  padding-top: map-get($spacers, 3);
+  padding-bottom: map-get($spacers, 3);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
   }
 
   &__container {
@@ -22,6 +30,7 @@
   }
 
   &__col {
+    position: relative;
     background-color: $gray-400;
     border-radius: $border-radius-lg;
     box-shadow: $box-shadow-lg;
@@ -34,9 +43,76 @@
       padding-bottom: map-get($spacers, 6);
     }
 
-    article {
-      width: 100%;
-      max-width: 750px;
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 77px;
+      height: 84px;
+      background-image: url('../images/cms-visuel-01.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+  }
+
+  &__article {
+    width: 100%;
+    max-width: 700px;
+
+    p {
+      margin-bottom: map-get($spacers, 4);
+    }
+
+    figure {
+      margin-bottom: map-get($spacers, 4) !important;
+    }
+
+    img {
+      @extend .img-fluid;
+    }
+
+    &__headings {
+      margin-bottom: map-get($spacers, 6);
+    }
+
+    &__title {
+      font-size: $h3-font-size;
+      font-weight: $font-weight-bold;
+      line-height: $headings-line-height;
+      text-align: center;
+      margin-bottom: map-get($spacers, 2) !important;
+    }
+
+    &__subtitle {
+      font-size: $h5-font-size;
+      line-height: $headings-line-height;
+      text-align: center;
+      margin-bottom: 0 !important;
+    }
+
+    &__cta {
+      text-align: center;
+      margin-bottom: 0 !important;
+      margin-top: map-get($spacers, 5);
+    }
+
+    &__btn-group {
+      text-align: center;
+      margin-top: map-get($spacers, 5);
+
+      p {
+        margin-bottom: map-get($spacers, 2) !important;
+        font-weight:$font-weight-bold;
+      }
+
+      .btn {
+        font-size: $font-size-base;
+        min-width: 180px;
+      }
     }
   }
 }
