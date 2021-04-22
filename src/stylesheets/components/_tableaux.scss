@@ -9,26 +9,6 @@
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');
-    position: relative;
-    overflow: hidden;
-
-    @include media-breakpoint-up(xl) {
-      overflow: initial;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: 90px;
-      right: -40px;
-      width: 99px;
-      height: 120px;
-      background-image: url('../images/tableaux-visuel-01.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
   }
 
   &__col {
