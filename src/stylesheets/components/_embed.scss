@@ -1,4 +1,4 @@
-.c-pageintro {
+.c-embed {
   padding-top: map-get($spacers, 3);
   padding-bottom: map-get($spacers, 4);
 
@@ -12,23 +12,6 @@
   }
 
   &__col {
-    &--title {
-      text-align: center;
-
-      h2 {
-
-        span {
-          @extend .mr-2;
-          color: $yellow;
-        }
-      }
-
-      p {
-        @extend .h5;
-        @extend .mb-0;
-        line-height: $line-height-base;
-      }
-
-    }
+    //
   }
 }
