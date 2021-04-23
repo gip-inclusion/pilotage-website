@@ -12,6 +12,7 @@ import cleanCSS from 'gulp-clean-css';
 import purgecss from 'gulp-purgecss';
 import ejs from'gulp-ejs';
 import rename from'gulp-rename';
+import clean from 'gulp-clean';
 
 const server = browserSync.create();
 
@@ -72,8 +73,7 @@ export function purgestyles() {
       .pipe(cleanCSS())
       .pipe(
         purgecss({
-          content: [paths.distHtml + '*.html'],
-          safelist: ['is-opened', /^is-/]
+          content: [paths.srcHtml, paths.srcScripts]
         }),
       )
       .pipe(gulp.dest(paths.distStyles))
@@ -129,12 +129,24 @@ export function cname() {
     .pipe(gulp.dest(paths.distHtml));
 }
 
+// Copy Fonts
+export function fonts() {
+  return gulp.src('src/fonts/**/*')
+    .pipe(gulp.dest(paths.distHtml + 'fonts/'));
+}
+
 // Templates to HTML Task
 export function html() {
   return gulp.src(paths.srcHtml)
     .pipe(ejs())
     .pipe(rename({ extname: '.html' }))
     .pipe(gulp.dest(paths.distHtml));
+}
+
+// Clean dist directory
+export function cleandist() {
+  return gulp.src(paths.distDir + '*')
+  .pipe(clean({force: true}));
 }
 
 // BrowserSync Reload Task
@@ -165,10 +177,10 @@ function watch() {
   gulp.watch(paths.srcImages, gulp.series(images, reload));
 }
 
-const dev = gulp.series(html, vendors, scripts, styles, images, serve, watch);
+const dev = gulp.series(cleandist, html, vendors, scripts, styles, images, fonts, serve, watch);
 gulp.task('dev', dev);
 
-const build = gulp.series(html, vendors, scripts, purgestyles, images);
+const build = gulp.series(cleandist, html, vendors, scripts, purgestyles, images, fonts);
 gulp.task('build', build);
 
 export default dev;
