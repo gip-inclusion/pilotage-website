@@ -18,7 +18,7 @@ const server = browserSync.create();
 
 const paths = {
   distDir: './dist/',
-  srcImages: 'src/images/*.{jpg,jpeg,png,svg}',
+  srcImages: 'src/images/*.{jpg,jpeg,png,svg,ico}',
   distImages: 'dist/images/',
   srcVendors: [
     'node_modules/jquery/dist/jquery.js',
