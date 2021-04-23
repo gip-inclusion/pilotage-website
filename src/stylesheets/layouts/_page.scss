@@ -7,6 +7,7 @@
         content: '';
         position: absolute;
         z-index: -1;
+        left: 50%;
         top: 250px;
         width: 99px;
         height: 120px;
@@ -14,10 +15,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        right: calc(0% + 10vw);
+        transform: translateX(150px);
 
-        @include media-breakpoint-up(lg) {
-          right: calc(0% + 20vw);
+        @include media-breakpoint-up(md) {
+          transform: translateX(350px);
+        }
+
+        @include media-breakpoint-up(xl) {
+          transform: translateX(450px);
         }
       }
     }
@@ -31,6 +36,7 @@
         content: '';
         position: absolute;
         z-index: -1;
+        left: 50%;
         top: 160px;
         width: 99px;
         height: 120px;
@@ -38,10 +44,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        right: calc(0% + 10vw);
+        transform: translateX(150px);
 
-        @include media-breakpoint-up(lg) {
-          right: calc(0% + 15vw);
+        @include media-breakpoint-up(md) {
+          transform: translateX(350px);
+        }
+
+        @include media-breakpoint-up(xl) {
+          transform: translateX(500px);
         }
       }
     }
