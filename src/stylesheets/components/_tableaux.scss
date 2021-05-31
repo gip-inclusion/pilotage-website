@@ -24,9 +24,9 @@
       margin: map-get($spacers, 4) 0 0 0;
 
       @include media-breakpoint-up(lg) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: map-get($spacers, 5);
-        grid-row-gap: 0;
+        grid-row-gap: map-get($spacers, 5);
         margin: map-get($spacers, 6) 0 map-get($spacers, 5) 0;
         min-height: 280px;
       }
