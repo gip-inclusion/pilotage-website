@@ -7,9 +7,6 @@ Thumbs.db
 .Trashes
 
 # Config
-.gitignore
-ftp-config.json
-deploy.sh
 
 # Dev & IDE
 .sass-cache/
