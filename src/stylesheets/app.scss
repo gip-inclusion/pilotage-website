@@ -51,7 +51,6 @@
 
 // Components
 @import 'components/main';
-@import 'components/header';
 @import 'components/footer';
 @import 'components/breadcrumb';
 @import 'components/pageintro';
@@ -64,7 +63,10 @@
 @import 'components/embed';
 @import 'components/cms';
 
-// Vendors
+// Sections
+@import 'sections/main';
+@import 'sections/header';
+
 
 // Layout
 @import 'layouts/page';

@@ -2,15 +2,19 @@
   <section class="c-footer-nav">
     <div class="c-footer-nav__container container">
       <div class="c-footer-nav__row row">
-        <div class="c-footer-nav__col col-12 col-lg-auto d-flex align-content-center">
+        <div class="c-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
           <div class="c-footer-nav__logo">
             <img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-rf.svg" alt="Rébublique Française">
           </div>
         </div>
-        <div class="c-footer-nav__col col-12 col-lg d-flex align-items-center">
-          <div>
-            <img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-generique-plateforme.svg" height="60" alt="Plateforme de l'inclusion">
-
+        <div class="c-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
+          <div class="d-inline-block text-center">
+            <span class="d-block">
+              <img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-plateforme-inclusion.svg" alt="Plateforme de l'inclusion" height="60">
+            </span>
+            <span class="d-block mt-2">
+              <img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
+            </span>
           </div>
         </div>
         <div class="c-footer-nav__col col-12 col-lg-6 d-flex align-items-center">
@@ -41,7 +45,7 @@
           </nav>
           </ul>
         </div>
-        <div class="c-footer-legal__col col-12 col-lg"><span>© République Française 2021</span></div>
+        <div class="c-footer-legal__col col-12 col-lg text-lg-right"><span>© République Française 2021</span></div>
       </div>
     </div>
   </section>

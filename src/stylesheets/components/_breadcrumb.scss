@@ -4,16 +4,10 @@
     max-width: map-get($container-max-widths, 'xl');
   }
 
-  .breadcrumb {
-    @extend .m-0;
-    font-size: $font-size-sm;
-  }
-
   .breadcrumb-item {
 
-    a,
-    a:hover {
-      text-decoration: none;
+    a {
+      @extend .text-decoration-none;
     }
 
     &.active {
@@ -28,7 +22,7 @@
         height: 5px;
         width: calc(100% - 1.5rem);
         border-radius: 5px;
-        background-color: rgba($yellow, 0.5);
+        background-color: $gray-700;
       }
     }
   }
@@ -38,8 +32,41 @@
     width: 11px;
     height: 100%;
     padding-right: map-get($spacers, 3);
-    background-image: url('./../images/picto-light-fleche.svg');
+    background-image: url('../images/picto-arrow-right.svg');
     background-repeat: no-repeat;
     background-position: left -3px center;
   }
+
+  &--marche {
+    .breadcrumb-item {
+      &.active::after {
+        background-color: $marche;
+      }
+    }
+  }
+
+  &--communaute {
+    .breadcrumb-item {
+      &.active::after {
+        background-color: $communaute;
+      }
+    }
+  }
+
+  &--pilotage {
+    .breadcrumb-item {
+      &.active::after {
+        background-color: $pilotage;
+      }
+    }
+  }
+
+  &--emploi {
+    .breadcrumb-item {
+      &.active::after {
+        background-color: $emploi;
+      }
+    }
+  }
+
 }
