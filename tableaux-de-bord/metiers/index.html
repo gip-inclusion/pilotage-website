@@ -26,55 +26,55 @@
 
   <body id="top">
 
-    <header class="c-header" role="banner" id="header">
-  <section class="c-header__container container">
-    <div class="c-header__row row">
-      <div class="c-header__col c-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
-        <a href="#top" class="c-header__logo-ministere"><img src="./../../images/logo-ministere-travail.svg" alt="Ministère du travail"></a>
+    <header class="s-header s-header--pilotage fixed-top" role="banner" id="header">
+  <section class="s-header__container container">
+    <div class="s-header__row row">
+      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
+        <a href="#top" class="s-header__logo-ministere"><img src="./../../images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
       </div>
-      <div class="c-header__col c-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
-        <a href="/itou-pilotage"/><img src="./../../images/logo-pilotage.svg" alt="Pilotage de l'inclusion"></a>
+      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
+        <a href=""/><img src="./../../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
       </div>
-      <div class="c-header__col c-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
-        <nav>
+      <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
+        <nav role="navigation">
           <ul>
-            <li >
-              <a href="/itou-pilotage/" rel="noopener">
+            <li>
+              <a href="/itou-pilotage/" rel="noopener" >
                 <span>Accueil</span>
               </a>
             </li>
-            <li class="is-current">
-              <a href="/itou-pilotage/tableaux-de-bord" rel="noopener">
+            <li>
+              <a href="/itou-pilotage/tableaux-de-bord" rel="noopener" class="is-active">
                 <span>Tableaux de bord</span>
               </a>
             </li>
-            <li >
-              <a href="/itou-pilotage/experimentation" rel="noopener">
+            <li>
+              <a href="/itou-pilotage/experimentation" rel="noopener" >
                 <span>Expérimentation</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="c-header__col c-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+      <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
         <span id="burger"><img src="./../../images/picto-burger.svg" alt="Menu" /></span>
         <span id="close"><img src="./../../images/picto-close.svg" alt="Fermer" /></span>
       </div>
       <div id="burgerNav">
-        <nav>
+        <nav role="navigation">
           <ul>
             <li>
-              <a href="/itou-pilotage/" rel="noopener">
+              <a href="/itou-pilotage/" rel="noopener" >
                 <span>Accueil</span>
               </a>
             </li>
             <li>
-              <a href="/itou-pilotage/tableaux-de-bord" rel="noopener">
+              <a href="/itou-pilotage/tableaux-de-bord" rel="noopener" class="is-active">
                 <span>Tableaux de bord</span>
               </a>
             </li>
             <li>
-              <a href="/itou-pilotage/experimentation" rel="noopener" target="_blank">
+              <a href="/itou-pilotage/experimentation" rel="noopener" >
                 <span>Expérimentation</span>
               </a>
             </li>
@@ -88,7 +88,7 @@
 
     <main class="c-main" role="main">
 
-      <section class="c-breadcrumb">
+      <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
           <div class="row">
             <nav class="col-12" aria-label="breadcrumb">
@@ -157,15 +157,19 @@
   <section class="c-footer-nav">
     <div class="c-footer-nav__container container">
       <div class="c-footer-nav__row row">
-        <div class="c-footer-nav__col col-12 col-lg-auto d-flex align-content-center">
+        <div class="c-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
           <div class="c-footer-nav__logo">
             <img src="./../../images/logo-rf.svg" alt="Rébublique Française">
           </div>
         </div>
-        <div class="c-footer-nav__col col-12 col-lg d-flex align-items-center">
-          <div>
-            <img src="./../../images/logo-generique-plateforme.svg" height="60" alt="Plateforme de l'inclusion">
-
+        <div class="c-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
+          <div class="d-inline-block text-center">
+            <span class="d-block">
+              <img src="./../../images/logo-plateforme-inclusion.svg" alt="Plateforme de l'inclusion" height="60">
+            </span>
+            <span class="d-block mt-2">
+              <img src="./../../images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
+            </span>
           </div>
         </div>
         <div class="c-footer-nav__col col-12 col-lg-6 d-flex align-items-center">
@@ -196,7 +200,7 @@
           </nav>
           </ul>
         </div>
-        <div class="c-footer-legal__col col-12 col-lg"><span>© République Française 2021</span></div>
+        <div class="c-footer-legal__col col-12 col-lg text-lg-right"><span>© République Française 2021</span></div>
       </div>
     </div>
   </section>
