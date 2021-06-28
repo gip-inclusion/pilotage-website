@@ -135,12 +135,6 @@ export function fonts() {
     .pipe(gulp.dest(paths.distHtml + 'fonts/'));
 }
 
-// Copy the CNAME file for configuring a subdomain in GitHub
-export function cname() {
-  return gulp.src('CNAME')
-    .pipe(gulp.dest(paths.distHtml));
-}
-
 // Templates to HTML Task
 export function html() {
   return gulp.src(paths.srcHtml)
