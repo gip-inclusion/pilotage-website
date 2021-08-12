@@ -26,21 +26,21 @@
 
   <body id="top">
 
-    <%- include('./partials/header', {pathDepth: '.' , currentItem: 'accueil' }) %>
+    <%- include('./_sections/header', {pathDepth: '.' , currentItem: 'accueil' }) %>
 
-      <main class="c-main" role="main">
+      <main class="s-main" role="main">
 
-        <section class="c-comprendre">
-          <div class="c-comprendre__container container">
-            <div class="c-comprendre__row row">
-              <div class="c-comprendre__col c-comprendre__col--article col-12 col-lg-6 col-xl d-flex align-items-center">
+        <section class="s-comprendre">
+          <div class="s-comprendre__container container">
+            <div class="s-comprendre__row row">
+              <div class="s-comprendre__col s-comprendre__col--article col-12 col-lg-6 col-xl d-flex align-items-center">
                 <article>
-                  <h1><strong>Mieux comprendre<br class="d-none d-lg-inline"> et analyser l'inclusion dans l'emploi</strong></h1>
-                  <h3>Automatiser et informer</h3>
+                  <h1 class="h1"><strong>Mieux comprendre<br class="d-none d-lg-inline"> et analyser l'inclusion dans l'emploi</strong></h1>
+                  <h3 class="h2 font-weight-normal">Automatiser et informer</h3>
                   <p>
                     Grâce à des <strong>tableaux de bord prêts à l'emploi</strong>, le pilotage de l’inclusion est un <strong>service numérique</strong> qui permet à tous les acteurs de l'inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d'indicateurs.
                   </p>
-                  <p class="c-comprendre__col__cta">
+                  <p class="s-comprendre__col__cta">
                     <a href="/tableaux-de-bord" rel="noopener" class="btn btn-lg btn-primary btn-ico">
                       <span>Accéder aux tableaux de bord</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
@@ -50,7 +50,7 @@
                   </p>
                 </article>
               </div>
-              <div class="c-comprendre__col c-comprendre__col--figure col-12 col-lg-6 col-xl-auto d-flex justify-content-center align-items-center pl-lg-0">
+              <div class="s-comprendre__col s-comprendre__col--figure col-12 col-lg-6 col-xl-auto d-flex justify-content-center align-items-center pl-lg-0">
                 <figure>
                   <img src="/images/comprendre-visuel-01.png" class="img-fluid" alt="">
                 </figure>
@@ -59,19 +59,19 @@
           </div>
         </section>
 
-        <section class="c-reporting">
-          <div class="c-reporting__container container">
-            <div class="c-reporting__row row">
-              <div class="c-reporting__col c-reporting__col--reporting col-12 d-flex align-items-stretch">
+        <section class="s-reporting">
+          <div class="s-reporting__container container">
+            <div class="s-reporting__row row">
+              <div class="s-reporting__col s-reporting__col--reporting col-12 d-flex align-items-stretch">
                 <article class="d-flex flex-column justify-content-between h-100 w-100">
                   <div>
-                    <h2>Reporting IAE</h2>
-                    <h3>Expérimentation en Seine-Saint-Denis</h3>
+                    <h2 class="h1"><strong>Reporting IAE</strong></h2>
+                    <h3 class="h2 font-weight-normal">Expérimentation en Seine-Saint-Denis</h3>
                     <p>L'objectif est de <strong>réduire la charge administrative</strong> relative au pilotage (temps de de saisie, temps de production des tableaux de bord, temps des analyses).</p>
                     <p><strong>De février à juin 2021</strong>, il s'agit d'étudier la possibilité de mettre en place un outil numérique permettant d'optimiser les reportings IAE existants.</p>
                   </div>
                   <div>
-                    <p class="c-reporting__cta">
+                    <p class="s-reporting__cta">
                       <a href="/experimentation" rel="noopener" class="btn btn-lg btn-primary btn-ico">
                         <span>En savoir plus</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
@@ -82,7 +82,7 @@
                   </div>
                 </article>
               </div>
-              <!-- <div class="c-reporting__col c-reporting__col--abonnement col-12 col-md-5 col-xl-4 d-flex align-items-stretch">
+              <!-- <div class="s-reporting__col s-reporting__col--abonnement col-12 col-md-5 col-xl-4 d-flex align-items-stretch">
                 <article class="d-flex flex-column justify-content-between h-100 w-100">
                   <form action="">
                     <div>
@@ -94,7 +94,7 @@
                       </div>
                     </div>
                     <div>
-                      <p class="c-reporting__cta">
+                      <p class="s-reporting__cta">
                         <button type="button" class="btn btn-lg btn-primary btn-ico">
                           <span>Envoyer</span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
@@ -110,20 +110,20 @@
           </div>
         </section>
 
-        <section class="c-services">
-          <div class="c-services__container container">
-            <div class="c-services__row row">
-              <div class="c-services__col c-services__col--title col-12">
-                <h2><strong>Les services de l'inclusion</strong></h2>
+        <section class="s-services">
+          <div class="s-services__container container">
+            <div class="s-services__row row">
+              <div class="s-services__col s-services__col--title col-12">
+                <h2 class="h1"><strong>Les services de l'inclusion</strong></h2>
                 <p>Découvrez toute l’information et les services numériques de la Plateforme de l'inclusion</p>
               </div>
-              <div class="c-services__col c-services__col--grid col-12">
+              <div class="s-services__col s-services__col--grid col-12">
                 <div class="d-flex flex-column justify-content-between">
                   <div>
-                    <p class="c-services__col__title"><img src="/images/logo-emplois.svg" height="80" alt="Les emplois de l'inclusion"></p>
+                    <p class="s-services__col__title"><img src="/images/logo-emploi-inclusion.svg" height="80" alt="Les emplois de l'inclusion"></p>
                     <p>Les emplois de l'inclusion est un service numérique de délivrance des PASS IAE et de mise en relation <strong>d'employeurs solidaires</strong> avec des <strong>candidats éloignés de l'emploi</strong> par le biais de tiers (prescripteurs habilités, orienteurs) ou en autoprescription.</p>
                   </div>
-                  <p class="c-services__col__cta">
+                  <p class="s-services__col__cta">
                     <a href="https://emplois.inclusion.beta.gouv.fr" rel="noopener" target="_blank" class="btn btn-lg btn-link btn-ico">
                       <span>Accéder aux emplois</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
@@ -134,10 +134,10 @@
                 </div>
                 <div class="d-flex flex-column justify-content-between">
                   <div>
-                    <p class="c-services__col__title"><img src="/images/logo-communaute.svg" height="80" alt="Le marché de l'inclusion"></p>
+                    <p class="s-services__col__title"><img src="/images/logo-communaute-inclusion.svg" height="80" alt="Le marché de l'inclusion"></p>
                     <p>La communauté de l'inclusion est un espace d'<strong>échanges</strong>, de <strong>rencontres</strong> et de <strong>partages</strong> entre les acteurs et actrices de l'insertion. Il est possible de découvrir des bonnes pratiques, des nouveautés, de l'actualité, de poser ses questions.</p>
                   </div>
-                  <p class="c-services__col__cta">
+                  <p class="s-services__col__cta">
                     <a href="https://communaute.inclusion.beta.gouv.fr" rel="noopener" target="_blank" class="btn btn-lg btn-link btn-ico">
                       <span>Accéder à la communauté</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
@@ -148,10 +148,10 @@
                 </div>
                 <div class="d-flex flex-column justify-content-between">
                   <div>
-                    <p class="c-services__col__title"><img src="/images/logo-marche.svg" height="80" alt="Le marché de l'inclusion"></p>
+                    <p class="s-services__col__title"><img src="/images/logo-marche-inclusion.svg" height="80" alt="Le marché de l'inclusion"></p>
                     <p>Vous souhaitez inscrire vos achats dans une démarche inclusive ? Le marché de l'inclusion est un service numérique permettant d'accéder à l'annuaire des <strong>entreprises sociales inclusives</strong> proposant des produits ou services inclusifs.</p>
                   </div>
-                  <p class="c-services__col__cta">
+                  <p class="s-services__col__cta">
                     <a href="https://lemarche.inclusion.beta.gouv.fr" rel="noopener" target="_blank" class="btn btn-lg btn-link btn-ico">
                       <span>Accéder au marché</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
@@ -167,10 +167,41 @@
 
       </main>
 
-      <%- include('./partials/footer', {pathDepth: '.' }) %>
+      <%- include('./_sections/footer', {pathDepth: '.' }) %>
 
-        <script src="/javascripts/vendors.js"></script>
-        <script src="/javascripts/app.js"></script>
+      <script src="/javascripts/app.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
+      <script type="text/javascript">
+        tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+        "orientation": "bottom", /* Banner position (top - bottom) */
+        "groupServices": false, /* Group services by category */
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": false, /* Show the cookie list */
+        "closePopup": false, /* Show a close X on the banner */
+        "showIcon": true, /* Show cookie icon to manage cookies */
+        //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+        "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+        "removeCredit": true, /* Remove credit link */
+        "moreInfoLink": true, /* Show more info link */
+        "useExternalCss": true, /* If false, the tarteaucitron.css file will be loaded */
+        "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+        "readmoreLink": "", /* Change the default readmore link */
+        "mandatory": true, /* Show a message about mandatory cookies */
+        });
+      </script>
+      <script type="text/javascript">
+        tarteaucitron.user.googleFonts = 'families';
+        (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
+      </script>
   </body>
 
 </html>

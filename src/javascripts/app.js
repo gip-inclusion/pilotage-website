@@ -1,3 +1,8 @@
+// Require libraries
+$ = require('jquery');
+require('popper.js');
+require('bootstrap');
+
 // Vars
 var stickyNav = $('#header');
 stickyNav.data('top', stickyNav.offset().top);

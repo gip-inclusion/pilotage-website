@@ -1,0 +1,93 @@
+.s-services {
+  padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 6);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 4);
+    padding-bottom: map-get($spacers, 4);
+  }
+
+  &__container {
+    max-width: map-get($container-max-widths, 'xl');
+  }
+
+  &__col {
+    &--title {
+      text-align: center;
+
+      p {
+        @extend .h3;
+        line-height: $line-height-base;
+        font-weight: $font-weight-normal;
+      }
+    }
+
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: map-get($spacers, 5);
+      margin: map-get($spacers, 4) 0 0 0;
+
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: map-get($spacers, 5);
+        grid-row-gap: 0;
+        margin: map-get($spacers, 6) 0 map-get($spacers, 5) 0;
+      }
+
+      > div {
+        @extend .px-3;
+        @extend .pt-3;
+        @extend .pb-2;
+        border-radius: $border-radius-lg;
+        box-shadow: $box-shadow-lg;
+        transition: $transition-base;
+
+        &:hover {
+          box-shadow: $box-shadow-xl;
+        }
+
+        &:first-child {
+          border-bottom: 10px solid $emploi;
+        }
+
+        &:nth-child(2) {
+          border-bottom: 10px solid $communaute;
+        }
+
+        &:nth-child(3) {
+          border-bottom: 10px solid $marche;
+        }
+
+        &:nth-child(4) {
+          border-bottom: 10px solid $pilotage;
+        }
+      }
+    }
+
+    &__title {
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+
+        img {
+          transform: translate(-35px, -30px);
+        }
+      }
+    }
+
+    &__cta {
+      @extend .mb-0;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        text-align: right;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+    }
+  }
+}

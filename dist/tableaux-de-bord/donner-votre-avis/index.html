@@ -26,14 +26,14 @@
 
   <body class="l-donner-votre-avis " id="top">
 
-    <header class="s-header s-header--pilotage fixed-top" role="banner" id="header">
+    <header class="s-header s-header--pilotage sticky-top" role="banner" id="header">
   <section class="s-header__container container">
     <div class="s-header__row row">
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
-        <a href="/#top" class="s-header__logo-ministere"><img src="./../../images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
+        <a href="#top" class="s-header__logo-ministere"><img src="./../../images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
       </div>
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
-        <a href="/"/><img src="./../../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
+        <a href=""/><img src="./../../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
       </div>
       <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
         <nav role="navigation">
@@ -86,43 +86,45 @@
 </header>
 
 
-    <main class="c-main" role="main">
+    <main class="s-main" role="main">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
           <div class="row">
-            <nav class="col-12" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Pilotage de l'inclusion</a></li>
-                <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Donnez votre avis</li>
-              </ol>
-            </nav>
+            <div class="col-12">
+              <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Pilotage de l'inclusion</a></li>
+                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Donnez votre avis</li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="c-pageintro">
-        <div class="c-pageintro__container container">
-          <div class="c-pageintro__row row">
-            <div class="c-pageintro__col c-pageintro__col--title col-12">
-              <h2><strong>Donnez-nous votre avis !</strong></h2>
+      <section class="s-pageintro">
+        <div class="s-pageintro__container container">
+          <div class="s-pageintro__row row">
+            <div class="s-pageintro__col s-pageintro__col--title col-12">
+              <h2 class="h1"><strong>Donnez-nous votre avis !</strong></h2>
               <p>Découvrez ci-dessous les autres tableaux de bord sur lesquels nous <br class="d-none d-lg-inline">travaillons et donnez-nous votre avis sur leur pertinence.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Offre d'insertion</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Offre d'insertion</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Dynamique de créations de SIAE</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999001" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -135,7 +137,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Le volume d'insertion</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999002" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -148,7 +150,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>L'offre d'insertion est-elle à proximité des entreprises qui recrutent ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999003" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -167,16 +169,16 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Orientation et entrée en parcours IAE</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Orientation et entrée en parcours IAE</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels publics bénéficient de l'IAE ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999006" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -189,7 +191,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Qui sont les candidats qui ne trouvent pas d'emploi sur la Plateforme ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999007" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -208,16 +210,16 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Public en parcours</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Public en parcours</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Combien de personnes sont en parcours IAE et où en est-on de l'objectif de 240.000 personnes par an ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999008" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -230,7 +232,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quelle est la durée d'un parcours en IAE ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999009" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -243,7 +245,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Les personnes sont-elles embauchées successivement dans plusieurs SIAE pendant leur parcours ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999010" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -256,7 +258,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>A quel rythme est employé une personne en insertion ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999011" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -269,7 +271,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Combien de personnes travaillent dans plusieurs SIAE en même temps ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999012" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -282,7 +284,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels usages des suspensions et prolongations de parcours ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999013" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -301,16 +303,16 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Suites de parcours</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Suites de parcours</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels sont les résultats de l'insertion en termes de retour à l'emploi ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999014" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -323,7 +325,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>La situation de la personne en début de parcours a-t-elle un impact sur sa sortie ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999015" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -336,7 +338,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels sont les parcours gagnants ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999016" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -355,16 +357,16 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Pilotage budgétaire</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Pilotage budgétaire</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels sont les départements qui sous-consomment ou sur-consomment ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999017" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -377,7 +379,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quel est le réalisé par rapport au budget ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999018" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -390,7 +392,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Combien coûte l'insertion sur un territoire et qui finance ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999019" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -403,7 +405,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quelles sont les dépenses évitées grâce à l'IAE ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999020" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -416,7 +418,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Peut-on calculer un retour sur investissement de l'IAE ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999021" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -435,17 +437,17 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Focus sur un prescripteur</p>
-                  <p class="c-cms__article__note">Pour les Direccte (habilitation de prescripteurs locaux), Pôle emploi (suivi par DR, DT ou agence), les conseils départementaux et les Plie (vis-à-vis des structures partenaires) et le prescripteur lui-même</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Focus sur un prescripteur</p>
+                  <p class="s-cms__article__note">Pour les Direccte (habilitation de prescripteurs locaux), Pôle emploi (suivi par DR, DT ou agence), les conseils départementaux et les Plie (vis-à-vis des structures partenaires) et le prescripteur lui-même</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quelles sont les pratiques d'orientation du prescripteur ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999022" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -464,17 +466,17 @@
         </div>
       </section>
 
-      <section class="c-cms">
-        <div class="c-cms__container container">
-          <div class="c-cms__row row">
-            <div class="c-cms__col col-12 d-flex justify-content-center">
-              <article class="c-cms__article">
-                <div class="c-cms__article__headings">
-                  <p class="c-cms__article__title">Tableaux de bord</p>
-                  <p class="c-cms__article__subtitle">Focus sur une SIAE</p>
-                  <p class="c-cms__article__note">Pour les Direccte, Pôle emploi, les conseils départementaux et la SIAE elle-même</p>
+      <section class="s-cms">
+        <div class="s-cms__container container">
+          <div class="s-cms__row row">
+            <div class="s-cms__col col-12 d-flex justify-content-center">
+              <article class="s-cms__article">
+                <div class="s-cms__article__headings">
+                  <p class="s-cms__article__title">Tableaux de bord</p>
+                  <p class="s-cms__article__subtitle">Focus sur une SIAE</p>
+                  <p class="s-cms__article__note">Pour les Direccte, Pôle emploi, les conseils départementaux et la SIAE elle-même</p>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quelles sont les pratiques de recrutement de cette SIAE ? </p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999023" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -487,7 +489,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quelles sont les pratiques d'emploi et d'accompagnement de cette SIAE ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999024" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -500,7 +502,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="c-cms__article__btn-group">
+                <div class="s-cms__article__btn-group">
                   <p>Quels sont les résultats en termes de sortie en emploi de cette SIAE ?</p>
                   <div class="btn-group btn-group-lg track-click-zapier" data-metabase-name="TB999025" role="group">
                     <button type="button" class="btn btn-outline-primary" data-answer="oui" onclick="return false;">
@@ -521,28 +523,46 @@
 
     </main>
 
-    <footer class="c-footer" role="contentinfo">
-  <section class="c-footer-nav">
-    <div class="c-footer-nav__container container">
-      <div class="c-footer-nav__row row">
-        <div class="c-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
-          <div class="c-footer-nav__logo">
-            <img src="./../../images/logo-rf.svg" alt="Rébublique Française">
+    <footer class="s-footer" role="contentinfo" id="footer">
+  <section class="s-footer-help">
+    <div class="s-footer-help__container container">
+      <div class="s-footer-help__row row">
+        <div class="s-footer-help__col col-12 col-lg"></div>
+        <div class="s-footer-help__col col-12 col-lg-auto">
+          <ul>
+            <li><span>Nous suivre</span></li>
+            <li><a href="https://twitter.com/inclusion_gouv" rel="noopener" target="_blank"><img src="./../../images/picto-twitter.svg" height="25" alt="Rejoignez-nous sur Twitter"></a></li>
+            <li><a href="https://www.linkedin.com/company/inclusion-gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-linkedin.svg" height="25" alt="Rejoignez-nous sur Linkedin"></a></li>
+            <li><a href="https://www.facebook.com/inclusion.gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-facebook.svg" height="25" alt="Rejoignez-nous sur Facebook"></a></li>
+            <li><a href="https://www.instagram.com/inclusion_gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-instagram.svg" height="25" alt="Rejoignez-nous sur Instagram"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC06_yIYfzAiDOMTemH9q3OQ" rel="noopener" target="_blank"><img src="./../../images/picto-youtube.svg" height="25" alt="Rejoignez-nous sur Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-footer-nav">
+    <div class="s-footer-nav__container container">
+      <div class="s-footer-nav__row row">
+        <div class="s-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
+          <div class="s-footer-nav__logo">
+            <img src="./../../images/logo-republique-francaise.svg" alt="Rébublique Française" class="img-fluid">
           </div>
         </div>
-        <div class="c-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
+        <div class="s-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
           <div class="d-inline-block text-center">
             <span class="d-block">
-              <img src="./../../images/logo-plateforme-inclusion.svg" alt="Plateforme de l'inclusion" height="60">
+              <img src="./../../images/logo-plateforme-inclusion.svg" height="60" alt="Plateforme de l'inclusion">
             </span>
             <span class="d-block mt-2">
               <img src="./../../images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
             </span>
           </div>
         </div>
-        <div class="c-footer-nav__col col-12 col-lg-6 d-flex align-items-center">
+        <div class="s-footer-nav__col col-12 col-lg-6 d-flex align-items-center">
           <div>
-            <p>Notre mantra issu du Pacte Ambition IAE : Permettre à chacun de trouver sa place. Libérons notre potentiel d'inclusion pour créer 100 000 emplois de plus.</p>
+            <p class="mb-3">Notre mantra issu du Pacte Ambition IAE : Permettre à chacun de trouver sa place. Libérons notre potentiel d'inclusion pour créer 100 000 emplois de plus.</p>
             <nav role="navigation">
               <ul>
                 <li><a href="https://emplois.inclusion.beta.gouv.fr" rel="noopener" target="_blank">Les emplois</a></li>
@@ -557,26 +577,57 @@
     </div>
   </section>
 
-  <section class="c-footer-legal">
-    <div class="c-footer-legal__container container">
-      <div class="c-footer-legal__row row">
-        <div class="c-footer-legal__col col-12 col-lg">
+  <section class="s-footer-legal">
+    <div class="s-footer-legal__container container">
+      <div class="s-footer-legal__row row">
+        <div class="s-footer-legal__col col-12 col-lg">
           <nav role="navigation">
             <ul>
               <li><a href="https://doc.inclusion.beta.gouv.fr/mentions/mentions-legales" rel="noopener" target="_blank">Mentions légales</a></li>
               <li><a href="/stats">Stats</a></li>
+            </ul>
           </nav>
-          </ul>
         </div>
-        <div class="c-footer-legal__col col-12 col-lg text-lg-right"><span>© République Française 2021</span></div>
+        <div class="s-footer-legal__col col-12 col-lg text-lg-right"><span>© République Française 2021</span></div>
       </div>
     </div>
   </section>
 </footer>
 
 
-    <script src="/../../javascripts/vendors.js"></script>
     <script src="/../../javascripts/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+      "privacyUrl": "", /* Privacy policy url */
+      "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+      "cookieName": "tarteaucitron", /* Cookie name */
+      "orientation": "bottom", /* Banner position (top - bottom) */
+      "groupServices": false, /* Group services by category */
+      "showAlertSmall": false, /* Show the small banner on bottom right */
+      "cookieslist": false, /* Show the cookie list */
+      "closePopup": false, /* Show a close X on the banner */
+      "showIcon": true, /* Show cookie icon to manage cookies */
+      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+      "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+      "adblocker": false, /* Show a Warning if an adblocker is detected */
+      "DenyAllCta" : true, /* Show the deny all button */
+      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+      "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+      "removeCredit": true, /* Remove credit link */
+      "moreInfoLink": true, /* Show more info link */
+      "useExternalCss": true, /* If false, the tarteaucitron.css file will be loaded */
+      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+      //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+      "readmoreLink": "", /* Change the default readmore link */
+      "mandatory": true, /* Show a message about mandatory cookies */
+      });
+    </script>
+    <script type="text/javascript">
+      tarteaucitron.user.googleFonts = 'families';
+      (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
+    </script>
   </body>
 
 </html>

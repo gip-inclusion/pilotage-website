@@ -1,0 +1,58 @@
+<header class="s-header s-header--pilotage sticky-top" role="banner" id="header">
+  <section class="s-header__container container">
+    <div class="s-header__row row">
+      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
+        <a href="#top" class="s-header__logo-ministere"><img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
+      </div>
+      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
+        <a href=""/><img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
+      </div>
+      <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" rel="noopener" <% if (locals.currentItem === 'accueil' ) { %>class="is-active"<% } %>>
+                <span>Accueil</span>
+              </a>
+            </li>
+            <li>
+              <a href="/tableaux-de-bord" rel="noopener" <% if (locals.currentItem === 'tableaux-de-bord' ) { %>class="is-active"<% } %>>
+                <span>Tableaux de bord</span>
+              </a>
+            </li>
+            <li>
+              <a href="/experimentation" rel="noopener" <% if (locals.currentItem === 'experimentation' ) { %>class="is-active"<% } %>>
+                <span>Expérimentation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <span id="burger"><img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/picto-burger.svg" alt="Menu" /></span>
+        <span id="close"><img src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/images/picto-close.svg" alt="Fermer" /></span>
+      </div>
+      <div id="burgerNav">
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" rel="noopener" <% if (locals.currentItem === 'accueil' ) { %>class="is-active"<% } %>>
+                <span>Accueil</span>
+              </a>
+            </li>
+            <li>
+              <a href="/tableaux-de-bord" rel="noopener" <% if (locals.currentItem === 'tableaux-de-bord' ) { %>class="is-active"<% } %>>
+                <span>Tableaux de bord</span>
+              </a>
+            </li>
+            <li>
+              <a href="/experimentation" rel="noopener" <% if (locals.currentItem === 'experimentation' ) { %>class="is-active"<% } %>>
+                <span>Expérimentation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+</header>

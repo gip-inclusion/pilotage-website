@@ -26,51 +26,84 @@
 
   <body id="top">
 
-    <%- include('./../partials/header', {pathDepth: './..'}) %>
+    <%- include('./../_sections/header', {pathDepth: './..'}) %>
 
-    <main class="c-main" role="main">
+    <main class="s-main" role="main">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
           <div class="row">
-            <nav class="col-12" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Pilotage de l'inclusion</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Stats</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
-
-      <section class="c-pageintro">
-        <div class="c-pageintro__container container">
-          <div class="c-pageintro__row row">
-            <div class="c-pageintro__col c-pageintro__col--title col-12">
-              <h2><span>#</span><strong>Stats</strong></h2>
+            <div class="col-12">
+              <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Pilotage de l'inclusion</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Stats</li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="c-embed">
-        <div class="c-embed__container container">
-          <div class="c-embed__row row">
-            <div class="c-embed__col col-12">
+      <section class="s-pageintro">
+        <div class="s-pageintro__container container">
+          <div class="s-pageintro__row row">
+            <div class="s-pageintro__col s-pageintro__col--title col-12">
+              <h2 class="h1"><span>#</span><strong>Stats</strong></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-embed">
+        <div class="s-embed__container container">
+          <div class="s-embed__row row">
+            <div class="s-embed__col col-12">
               <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/4b7ac58f-a77e-4bdd-b491-59ae86ae2cde" title="Stats" width="100%" height="500" frameborder="0" allowtransparency></iframe>
             </div>
           </div>
         </div>
       </section>
 
-      <%- include('./../partials/autres-tableaux', {pathDepth: './..'}) %>
+      <%- include('./../_sections/autres-tableaux', {pathDepth: './..'}) %>
 
     </main>
 
-    <%- include('./../partials/footer', {pathDepth: './..'}) %>
+    <%- include('./../_sections/footer', {pathDepth: './..'}) %>
 
-    <script src="/../javascripts/vendors.js"></script>
     <script src="/../javascripts/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+      "privacyUrl": "", /* Privacy policy url */
+      "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+      "cookieName": "tarteaucitron", /* Cookie name */
+      "orientation": "bottom", /* Banner position (top - bottom) */
+      "groupServices": false, /* Group services by category */
+      "showAlertSmall": false, /* Show the small banner on bottom right */
+      "cookieslist": false, /* Show the cookie list */
+      "closePopup": false, /* Show a close X on the banner */
+      "showIcon": true, /* Show cookie icon to manage cookies */
+      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+      "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+      "adblocker": false, /* Show a Warning if an adblocker is detected */
+      "DenyAllCta" : true, /* Show the deny all button */
+      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+      "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+      "removeCredit": true, /* Remove credit link */
+      "moreInfoLink": true, /* Show more info link */
+      "useExternalCss": true, /* If false, the tarteaucitron.css file will be loaded */
+      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+      //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+      "readmoreLink": "", /* Change the default readmore link */
+      "mandatory": true, /* Show a message about mandatory cookies */
+      });
+    </script>
+    <script type="text/javascript">
+      tarteaucitron.user.googleFonts = 'families';
+      (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
+    </script>
   </body>
 
 </html>
