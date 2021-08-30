@@ -1,6 +1,14 @@
 // Itou Theme
 @import 'node_modules/itoutheme/src/stylesheets/app';
 
+// Itou Theme Overide
+.s-prefooter__gridlist {
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 // Components
 
 // Sections
@@ -17,6 +25,4 @@
 
 // Layout
 @import 'layouts/page';
-
-// IE11 Hacks
 
