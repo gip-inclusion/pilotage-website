@@ -40,7 +40,9 @@
       <section class="s-embed">
         <div class="s-embed__container container">
           <div class="s-embed__row row">
-            <div class="s-embed__col col-12" id="embedMetabase"></div>
+            <div class="s-embed__col col-12" id="embedMetabase">
+              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/f2d5fd00-fa17-4e4e-8d83-65198dcef8f9" title="Quels critères remplissent les personnes recrutées en autoprescription ?" width="100%" height="1500" frameborder="0" allowtransparency></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -52,10 +54,6 @@
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
     <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true }) %>
-
-    <script type="text/javascript">
-      loadMetabase(32, 'Quels critères remplissent les personnes recrutées en autoprescription ?');
-    </script>
   </body>
 
 </html>
