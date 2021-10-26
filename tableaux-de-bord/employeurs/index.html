@@ -121,9 +121,7 @@
       <section class="s-embed">
         <div class="s-embed__container container">
           <div class="s-embed__row row">
-            <div class="s-embed__col col-12">
-              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/7bf0e0a0-28da-49e3-990e-f38e6239d8c7" title="Quelle est la typologie des employeurs inclusifs sur mon territoire ?" width="100%" height="1500" frameborder="0" allowtransparency></iframe>
-            </div>
+            <div class="s-embed__col col-12" id="embedMetabase"></div>
           </div>
         </div>
       </section>
@@ -252,7 +250,7 @@
 </footer>
 
 
-    <script src="./../../javascripts/app.js"></script>
+    <script type="text/javascript" src="./../../javascripts/app.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
 <script type="text/javascript">
   tarteaucitron.init({
@@ -312,6 +310,9 @@
 
 
 
+    <script type="text/javascript">
+      loadMetabase(54, 'Quelle est la typologie des employeurs inclusifs sur mon territoire ?');
+    </script>
   </body>
 
 </html>
