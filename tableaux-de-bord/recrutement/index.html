@@ -118,11 +118,12 @@
         </div>
       </section>
 
+      <!-- onload="iFrameResize({}, this)" -->
       <section class="s-embed">
         <div class="s-embed__container container">
           <div class="s-embed__row row">
             <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/3153233e-a365-459c-aff2-0104d4b327c3" title="Où se situent les tensions de recrutement ?" width="100%" height="1500" frameborder="0" allowtransparency></iframe>
+              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/3153233e-a365-459c-aff2-0104d4b327c3" title="Où se situent les tensions de recrutement ?" id="iframeMetabase" frameborder="0" allowtransparency></iframe>
             </div>
             <div class="s-embed__col col-12 mt-5 mb-3 mb-lg-5">
               <h2 class="h3">Aide à la lecture et à l'utilisation de ces indicateurs/graphiques</h2>
@@ -143,6 +144,11 @@
                 Oui, vous pouvez sélectionner les données que vous souhaitez en utilisant les filtres en haut de l’écran, voici un exemple : <br>
                 <img src="../../images/tableaux-ex-img-01.png" class="mt-1" alt="">
               </p>
+              <!-- <p>
+                <strong>Comment télécharger les données d'un indicateur/graphique ?</strong><br>
+                En cliquant sur cette icône qui apparaît en haut à droite d’un graphique au survol de la souris : <br>
+                <img src="../../images/tableaux-ex-img-02.png" class="mt-1" alt="">
+              </p> -->
             </div>
           </div>
         </div>
@@ -326,6 +332,13 @@
     })();
   </script>
   <!-- End Matomo Code -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
+<script>
+  iFrameResize({}, '#iframeMetabase');
+</script>
+
 
   </body>
 </html>
