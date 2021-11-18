@@ -41,7 +41,7 @@
         <div class="s-embed__container container">
           <div class="s-embed__row row">
             <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/aca1f2c5-e8ad-4c68-9d90-dbe67ca9f4bc" title="Quelle est la typologie des prescripteurs sur mon territoire ?" width="100%" height="1500" frameborder="0" allowtransparency></iframe>
+              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/aca1f2c5-e8ad-4c68-9d90-dbe67ca9f4bc" title="Quelle est la typologie des prescripteurs sur mon territoire ?" id="iframeMetabase" frameborder="0" allowtransparency></iframe>
             </div>
             <div class="s-embed__col col-12 mt-5 mb-3 mb-lg-5">
               <h2 class="h3">Aide à la lecture et à l'utilisation de ces indicateurs/graphiques</h2>
@@ -73,7 +73,7 @@
 
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
-    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true }) %>
+    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
   </body>
 
 </html>
