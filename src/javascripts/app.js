@@ -40,3 +40,10 @@ $('.track-click-zapier button').on('click tap', function() {
     parent.addClass('disabled');
   });
 });
+
+if ($('#iframeMetabase').length) {
+  setTimeout(function() {
+    var iframeHeight = $('#iframeMetabase').contents().find('iframe').css('height');
+    $('#iframeMetabase').height(iframeHeight);
+  }, 2000);
+}
