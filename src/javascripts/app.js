@@ -45,5 +45,6 @@ if ($('#iframeMetabase').length) {
   setTimeout(function() {
     var iframeHeight = $('#iframeMetabase').contents().find('iframe').css('height');
     $('#iframeMetabase').height(iframeHeight);
+    console.log('iframeHeight: ', iframeHeight);
   }, 2000);
 }
