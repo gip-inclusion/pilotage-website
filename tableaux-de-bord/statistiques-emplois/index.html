@@ -23,21 +23,21 @@
 <meta property="twitter:description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
 <meta property="twitter:image" content="https://pilotage.inclusion.beta.gouv.fr/images/logo-pilotage-inclusion-meta.png">
 
-<link rel="shortcut icon" href="/../images/favico.ico" type="image/ico">
-<link rel="stylesheet" href="/../stylesheets/app.css" />
+<link rel="shortcut icon" href="/../../images/favico.ico" type="image/ico">
+<link rel="stylesheet" href="/../../stylesheets/app.css" />
 
   </head>
 
-  <body class="l-tableaux-de-bord" id="top">
+  <body id="top">
 
     <header class="s-header s-header--pilotage sticky-top" role="banner" id="header">
   <section class="s-header__container container">
     <div class="s-header__row row">
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
-        <a href="#top" class="s-header__logo-ministere"><img src="./../images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
+        <a href="#top" class="s-header__logo-ministere"><img src="./../../images/logo-ministere-emploi.svg" alt="Ministère de l'emploi"></a>
       </div>
       <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
-        <a href="/"><img src="./../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
+        <a href="/"><img src="./../../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
       </div>
       <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
         <nav role="navigation">
@@ -61,8 +61,8 @@
         </nav>
       </div>
       <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
-        <span id="burger"><img src="./../images/picto-burger.svg" alt="Menu" /></span>
-        <span id="close"><img src="./../images/picto-close.svg" alt="Fermer" /></span>
+        <span id="burger"><img src="./../../images/picto-burger.svg" alt="Menu" /></span>
+        <span id="close"><img src="./../../images/picto-close.svg" alt="Fermer" /></span>
       </div>
       <div id="burgerNav">
         <nav role="navigation">
@@ -92,14 +92,15 @@
 
     <main class="s-main" role="main">
 
-     <section class="c-breadcrumb c-breadcrumb--pilotage">
+      <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="/">Pilotage de l'inclusion</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Tableaux de bord</li>
+                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Stats des emplois</li>
                 </ol>
               </nav>
             </div>
@@ -107,108 +108,59 @@
         </div>
       </section>
 
-      <section class="s-tableaux">
-        <div class="s-tableaux__container container">
-          <div class="s-tableaux__row row">
-            <div class="s-tableaux__col s-tableaux__col--title col-12">
-              <h1 class="h1"><strong>Tableaux de bord</strong></h1>
-            </div>
-            <div class="s-tableaux__col s-tableaux__col--grid col-12">
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Recrutement</strong></h2>
-                  <p>Où se situent les tensions de recrutement ?</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/recrutement" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Employeurs</strong></h2>
-                  <p>Quelle est la typologie des employeurs inclusifs sur mon territoire ?</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/employeurs" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Prescripteurs</strong></h2>
-                  <p>Quelle est la typologie des prescripteurs sur mon territoire ?</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/prescripteurs" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Critères</strong></h2>
-                  <p>Quels critères remplissent les personnes recrutées en autoprescription ?</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/criteres" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Métiers</strong></h2>
-                  <p>Quels sont les métiers proposés et recherchés depuis fin 2019 ?</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/metiers" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-              <div class="d-flex flex-column justify-content-between position-relative">
-                <div>
-                  <h2 class="h2"><span>#</span><strong>Stats des emplois</strong></h2>
-                  <p>Statistiques avancées des emplois de l'inclusion</p>
-                </div>
-                <p class="s-tableaux__col__cta">
-                  <a href="/tableaux-de-bord/statistiques-emplois" rel="noopener" class="btn btn-lg btn-link btn-ico stretched-link">
-                    <span>Voir le tableau de bord</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                      <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
-                    </svg>
-                  </a>
-                </p>
-              </div>
+      <section class="s-pageintro">
+        <div class="s-pageintro__container container">
+          <div class="s-pageintro__row row">
+            <div class="s-pageintro__col s-pageintro__col--title col-12">
+              <h1 class="h1"><span>#</span><strong>Stats des emplois</strong></h1>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- onload="iFrameResize({}, this)" -->
+      <section class="s-embed">
+        <div class="s-embed__container container">
+          <div class="s-embed__row row">
+            <div class="s-embed__col col-12" id="embedMetabase">
+              <iframe src="https://stats.inclusion.beta.gouv.fr/public/dashboard/c65faf79-3b89-4416-9faa-ff5182f41468" title="Statistiques avancées des emplois de l'inclusion" id="iframeMetabase" frameborder="0" allowtransparency></iframe>
+            </div>
+            <div class="s-embed__col col-12 mt-5 mb-3 mb-lg-5">
+              <h2 class="h3">Aide à la lecture et à l'utilisation de ces indicateurs/graphiques</h2>
+              <p>
+                <strong>Comment obtenir le nombre (ou la répartition) exacte correspondant à un élément de réponse ?</strong><br>
+                En survolant la couleur attribuée à cet élément de réponse sur le graphique, vous trouverez le nombre (ou la part) de cet élément dans une infobulle.
+              </p>
+              <p>
+                <strong>Comment obtenir la définition d'un chiffre ou d'un indicateur/graphique ?</strong><br>
+                En cliquant dessus, notre dictionnaire des indicateurs s’ouvrira (directement au niveau de celui demandé).
+              </p>
+              <p>
+                <strong>Vous n’êtes pas sûr·e de comprendre les termes/sigles utilisés ?</strong><br>
+                L'ensemble des termes/sigles utilisés ici est défini dans le <a href="https://doc.inclusion.beta.gouv.fr/glossaire-inclusion" target="_blank" rel="noopener">glossaire de l’inclusion</a>.
+              </p>
+              <p>
+                <strong>Est-il possible de sélectionner seulement certaines données pour générer ces indicateurs/graphiques ?</strong><br>
+                Oui, vous pouvez sélectionner les données que vous souhaitez en utilisant les filtres en haut de l’écran, voici un exemple : <br>
+                <img src="../../images/tableaux-ex-img-01.png" class="mt-1" alt="">
+              </p>
+              <!-- <p>
+                <strong>Comment télécharger les données d'un indicateur/graphique ?</strong><br>
+                En cliquant sur cette icône qui apparaît en haut à droite d’un graphique au survol de la souris : <br>
+                <img src="../../images/tableaux-ex-img-02.png" class="mt-1" alt="">
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section class="s-autres-tableaux">
   <div class="s-autres-tableaux__container container">
     <div class="s-autres-tableaux__row row">
       <div class="s-autres-tableaux__col s-autres-tableaux__col--figure col-12 col-md-4 d-flex align-items-center justify-content-center">
         <figure>
-          <img src="./../images/autres-tableaux-visuel-01.png" class="img-fluid" alt="">
+          <img src="./../../images/autres-tableaux-visuel-01.png" class="img-fluid" alt="">
         </figure>
       </div>
       <div class="s-autres-tableaux__col s-autres-tableaux__col--article col-12 col-md-8 d-flex align-items-center">
@@ -218,7 +170,7 @@
             Découvrez ci-dessous les autres tableaux de bord sur lesquels nous travaillons et donnez-nous votre avis sur leur pertinence.
           </p>
           <p class="s-autres-tableaux__col__cta">
-            <a href="./../tableaux-de-bord/donner-votre-avis/" rel="noopener" class="btn btn-lg btn-primary btn-ico">
+            <a href="./../../tableaux-de-bord/donner-votre-avis/" rel="noopener" class="btn btn-lg btn-primary btn-ico">
               <span>Donner votre avis</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                 <path fill="currentColor" fill-rule="nonzero" stroke="currentColor" d="M1.964 8.95h11.03L9.51 12.737a.451.451 0 00.037.646.474.474 0 00.66-.037L14.386 8.8l.035-.043.033-.05.013-.05V8.539c0-.012.033-.02.033-.044v-.151l-.014-.05-.019-.03-.034-.045-4.193-4.566a.474.474 0 00-.66-.037.452.452 0 00-.036.646l3.45 3.777H1.963a.46.46 0 00-.464.455.46.46 0 00.464.455z"/>
@@ -239,7 +191,7 @@
     <div class="s-prefooter__row row">
       <div class="s-prefooter__col col-12 col-sm-auto d-flex align-items-center">
         <div class="s-prefooter__logo">
-          <img src="./../images/logo-pilotage-inclusion.svg" alt="">
+          <img src="./../../images/logo-pilotage-inclusion.svg" alt="">
         </div>
       </div>
       <div class="s-prefooter__col col-12 col-sm d-flex align-items-center justify-content-start justify-content-sm-end justify-content-lg-start">
@@ -263,11 +215,11 @@
         <div class="s-footer-help__col col-12 col-lg-auto">
           <ul>
             <li><span>Nous suivre</span></li>
-            <li><a href="https://twitter.com/inclusion_gouv" rel="noopener" target="_blank"><img src="./../images/picto-twitter.svg" height="25" alt="Rejoignez-nous sur Twitter"></a></li>
-            <li><a href="https://www.linkedin.com/company/inclusion-gouv/" rel="noopener" target="_blank"><img src="./../images/picto-linkedin.svg" height="25" alt="Rejoignez-nous sur Linkedin"></a></li>
-            <li><a href="https://www.facebook.com/inclusion.gouv/" rel="noopener" target="_blank"><img src="./../images/picto-facebook.svg" height="25" alt="Rejoignez-nous sur Facebook"></a></li>
-            <li><a href="https://www.instagram.com/inclusion_gouv/" rel="noopener" target="_blank"><img src="./../images/picto-instagram.svg" height="25" alt="Rejoignez-nous sur Instagram"></a></li>
-            <li><a href="https://www.youtube.com/channel/UC06_yIYfzAiDOMTemH9q3OQ" rel="noopener" target="_blank"><img src="./../images/picto-youtube.svg" height="25" alt="Rejoignez-nous sur Youtube"></a></li>
+            <li><a href="https://twitter.com/inclusion_gouv" rel="noopener" target="_blank"><img src="./../../images/picto-twitter.svg" height="25" alt="Rejoignez-nous sur Twitter"></a></li>
+            <li><a href="https://www.linkedin.com/company/inclusion-gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-linkedin.svg" height="25" alt="Rejoignez-nous sur Linkedin"></a></li>
+            <li><a href="https://www.facebook.com/inclusion.gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-facebook.svg" height="25" alt="Rejoignez-nous sur Facebook"></a></li>
+            <li><a href="https://www.instagram.com/inclusion_gouv/" rel="noopener" target="_blank"><img src="./../../images/picto-instagram.svg" height="25" alt="Rejoignez-nous sur Instagram"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC06_yIYfzAiDOMTemH9q3OQ" rel="noopener" target="_blank"><img src="./../../images/picto-youtube.svg" height="25" alt="Rejoignez-nous sur Youtube"></a></li>
           </ul>
         </div>
       </div>
@@ -279,16 +231,16 @@
       <div class="s-footer-nav__row row">
         <div class="s-footer-nav__col col-5 col-lg-2 d-flex align-items-center">
           <div class="s-footer-nav__logo">
-            <img src="./../images/logo-republique-francaise.svg" alt="Rébublique Française" class="img-fluid">
+            <img src="./../../images/logo-republique-francaise.svg" alt="Rébublique Française" class="img-fluid">
           </div>
         </div>
         <div class="s-footer-nav__col col-7 col-lg-4 d-flex align-items-center justify-content-end justify-content-lg-start">
           <div class="d-inline-block text-center">
             <span class="d-block">
-              <img src="./../images/logo-plateforme-inclusion.svg" height="60" alt="Plateforme de l'inclusion">
+              <img src="./../../images/logo-plateforme-inclusion.svg" height="60" alt="Plateforme de l'inclusion">
             </span>
             <span class="d-block mt-2">
-              <img src="./../images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
+              <img src="./../../images/logo-accelere-betagouv.svg" alt="Accéléré par Beta.gouv.fr">
             </span>
           </div>
         </div>
@@ -323,7 +275,7 @@
 </footer>
 
 
-    <script type="text/javascript" src="./../javascripts/app.js"></script>
+    <script type="text/javascript" src="./../../javascripts/app.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
 <script type="text/javascript">
   tarteaucitron.init({
@@ -357,8 +309,36 @@
   (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
 </script>
 
+  <script type="text/javascript">
+    /* Matomo opt-in / opt-out */
+    tarteaucitron.user.matomoId = 146;
+    tarteaucitron.user.matomoHost = "https://stats.data.gouv.fr/";
+    (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
+  </script>
+  <!-- Hotjar Tracking Code for https://pilotage.inclusion.beta.gouv.fr/ -->
+  <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2582308,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://stats.data.gouv.fr/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '146']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
+<script>
+  iFrameResize({}, '#iframeMetabase');
+</script>
 
 
   </body>
-
 </html>
