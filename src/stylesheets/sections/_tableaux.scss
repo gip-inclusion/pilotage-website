@@ -1,11 +1,6 @@
 .s-tableaux {
   padding-top: map-get($spacers, 4);
-  padding-bottom: map-get($spacers, 6);
-
-  @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 4);
-    padding-bottom: map-get($spacers, 4);
-  }
+  padding-bottom: map-get($spacers, 4);
 
   &__container {
     max-width: map-get($container-max-widths, 'xl');

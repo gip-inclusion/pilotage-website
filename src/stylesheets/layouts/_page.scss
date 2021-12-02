@@ -1,32 +1,32 @@
 .l-experimentation,
 .l-donner-votre-avis,
 .l-accessibilite {
-  .s-main {
-    position: relative;
+.s-main {
+  position: relative;
 
-      &:after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 250px;
-        width: 99px;
-        height: 120px;
-        background-image: url('../images/tableaux-visuel-01.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        transform: translateX(150px);
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 250px;
+      width: 99px;
+      height: 120px;
+      background-image: url('../images/tableaux-visuel-01.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: translateX(150px);
 
-        @include media-breakpoint-up(md) {
-          transform: translateX(350px);
-        }
+      @include media-breakpoint-up(md) {
+        transform: translateX(350px);
+      }
 
-        @include media-breakpoint-up(xl) {
-          transform: translateX(450px);
-        }
+      @include media-breakpoint-up(xl) {
+        transform: translateX(450px);
       }
     }
+  }
 }
 
 .l-tableaux-de-bord {
