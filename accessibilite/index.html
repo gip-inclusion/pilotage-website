@@ -29,6 +29,13 @@
   </head>
 
   <body class="l-accessibilite" id="top">
+    <nav role="navigation" aria-label="Accès rapide" class="sr-only">
+  <ul>
+    <li><a href="#nav-primary">Aller au menu principal</a></li>
+    <li><a href="#main">Aller au contenu principal</a></li>
+  </ul>
+</nav>
+
 
     <header class="s-header s-header--pilotage sticky-top" role="banner" id="header">
   <section class="s-header__container container">
@@ -40,7 +47,7 @@
         <a href="/"><img src="./../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
       </div>
       <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
-        <nav role="navigation">
+        <nav id="nav-primary" role="navigation" aria-label="Navigation principale">
           <ul>
             <li>
               <a href="/" rel="noopener" >
@@ -80,7 +87,7 @@
 </header>
 
 
-    <main class="s-main" role="main">
+    <main id="main" role="main" class="s-main" tabindex="-1">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
@@ -101,7 +108,7 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><span>#</span><strong>Accessibilité</strong></h1>
+              <h1 class="h1-hero"><span>#</span><strong>Accessibilité</strong></h1>
             </div>
           </div>
         </div>
@@ -112,17 +119,17 @@
           <div class="s-pageoutro__row row">
             <div class="s-pageoutro__col col-12 d-flex justify-content-center">
                 <article>
-                  <h2 class="h2 mb-5"><strong>Déclaration d'accessibilité</strong></h2>
+                  <h2 class="h1 mb-5"><strong>Déclaration d'accessibilité</strong></h2>
                   <p>La <strong>Délégation générale à l'Emploi et à la Formation professionnelle</strong> s'engage à rendre son service accessible, conformément à l'article 47 de la loi n° 2005-102 du 11 février 2005.</p>
                   <p>Cette déclaration d'accessibilité s'applique au site web <strong>Le pilotage de l'inclusion</strong>.</p>
 
-                  <p class="h3 mb-1">État de conformité</p>
+                  <p class="h2 mb-1">État de conformité</p>
                   <p>Le pilotage de l'inclusion est non conforme avec le RGAA 4.1. Le site n'a pas encore été audité.</p>
 
-                  <p class="h3 mb-1">Établissement de cette déclaration d'accessibilité</p>
+                  <p class="h2 mb-1">Établissement de cette déclaration d'accessibilité</p>
                   <p>Cette déclaration a été établie le 19 août 2021.</p>
 
-                  <p class="h3 mb-1">Amélioration et contact</p>
+                  <p class="h2 mb-1">Amélioration et contact</p>
                   <p class="mb-0">Si vous n'arrivez pas à accéder à un contenu ou à un service, vous pouvez nous contacter pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.</p>
                   <ul>
                     <li>E-mail : <a href="mailto:contact@inclusion.beta.gouv.fr" class="text-decoration-underline">contact@inclusion.beta.gouv.fr</a></li>
@@ -130,7 +137,7 @@
                   </ul>
                   <p>Nous essayons de répondre dans les 2 jours ouvrés.</p>
 
-                  <p class="h3 mb-1">Voie de recours</p>
+                  <p class="h2 mb-1">Voie de recours</p>
                   <p>Cette procédure est à utiliser dans le cas suivant : vous avez signalé au responsable du site internet un défaut d'accessibilité qui vous empêche d'accéder à un contenu ou à un des services du portail et vous n'avez pas obtenu de réponse satisfaisante.</p>
 
                   <p class="mb-0">Vous pouvez :</p>
@@ -215,10 +222,10 @@
           <div>
             <p class="mb-3">Notre mantra issu du Pacte Ambition IAE : Permettre à chacun de trouver sa place. Libérons notre potentiel d'inclusion pour créer 100 000 emplois de plus.</p>
             <ul>
-              <li><a href="https://emplois.inclusion.beta.gouv.fr" rel="noopener" target="_blank">Les emplois</a></li>
-              <li><a href="https://communaute.inclusion.beta.gouv.fr" rel="noopener" target="_blank">La communauté</a></li>
-              <li><a href="https://pilotage.inclusion.beta.gouv.fr" rel="noopener" target="_blank">Le pilotage</a></li>
-              <li><a href="https://lemarche.inclusion.beta.gouv.fr" rel="noopener" target="_blank">Le marché</a></li>
+              <li><a href="https://emplois.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Les emplois (lien externe)">Les emplois</a></li>
+              <li><a href="https://communaute.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="La communauté (lien externe)">La communauté</a></li>
+              <li><a href="https://pilotage.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Le pilotage (lien externe)">Le pilotage</a></li>
+              <li><a href="https://lemarche.inclusion.beta.gouv.fr" rel="noopener" target="_blank" title="Le marché (lien externe)">Le marché</a></li>
             </ul>
           </div>
         </div>
@@ -231,7 +238,7 @@
       <div class="s-footer-legal__row row">
         <div class="s-footer-legal__col col-12 col-lg">
           <ul>
-            <li><a href="https://doc.inclusion.beta.gouv.fr/mentions/mentions-legales" rel="noopener" target="_blank">Mentions légales</a></li>
+            <li><a href="https://doc.inclusion.beta.gouv.fr/mentions/mentions-legales" rel="noopener" target="_blank" title="Mentions légales (lien externe)">Mentions légales</a></li>
             <li><a href="/accessibilite">Accessibilité (non conforme)</a></li>
           </ul>
         </div>
