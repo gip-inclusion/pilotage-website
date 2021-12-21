@@ -36,7 +36,7 @@ $('.track-click-zapier button').on('click tap', function() {
 
   $.post( target, { answer: answer, metabase_name: metabase_name })
   .done(function( data ) {
-    thisButton.children('img').show();
+    thisButton.children('img').css('display', 'inline-block');
     parent.addClass('disabled');
   });
 });

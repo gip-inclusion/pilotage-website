@@ -2,7 +2,7 @@
   padding-bottom: map-get($spacers, 4);
 
   @include media-breakpoint-up(lg) {
-    padding-bottom: map-get($spacers, 6);
+    padding-bottom: map-get($spacers, 8);
   }
 }
 
@@ -75,7 +75,7 @@
     }
 
     &__title {
-      font-size: $h2-font-size;
+      font-size: $h1-font-size;
       font-weight: $font-weight-bold;
       line-height: $headings-line-height;
       text-align: center;
@@ -83,7 +83,7 @@
     }
 
     &__subtitle {
-      font-size: $h3-font-size;
+      font-size: $h2-font-size;
       line-height: $headings-line-height;
       text-align: center;
       margin-bottom: 0 !important;
@@ -116,11 +116,15 @@
 
         .btn {
           font-size: $font-size-base;
-          min-width: 180px;
+          min-width: 200px;
 
           img {
             display: none;
             @extend .mr-1;
+          }
+
+          span {
+            display: inline-block;
           }
         }
 
