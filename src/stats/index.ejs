@@ -6,10 +6,11 @@
   </head>
 
   <body id="top">
+    <%- include('./../_partials/skip-links') %>
 
     <%- include('./../_sections/header', {pathDepth: './..'}) %>
 
-    <main class="s-main" role="main">
+    <main id="main" role="main" class="s-main" tabindex="-1">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
@@ -30,7 +31,7 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><span>#</span><strong>Stats</strong></h1>
+              <h1 class="h1-hero"><span>#</span><strong>Stats</strong></h1>
             </div>
           </div>
         </div>
@@ -43,7 +44,7 @@
               <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/63/" title="Stats" id="iframeMetabase" allowtransparency></iframe>
             </div>
             <div class="s-embed__col col-12 mt-5 mb-3 mb-lg-5">
-              <h2 class="h3">Aide à la lecture et à l'utilisation de ces indicateurs/graphiques</h2>
+              <h2 class="h2">Aide à la lecture et à l'utilisation de ces indicateurs/graphiques</h2>
               <p>
                 <strong>Comment obtenir le nombre (ou la répartition) exacte correspondant à un élément de réponse ?</strong><br>
                 En survolant la couleur attribuée à cet élément de réponse sur le graphique, vous trouverez le nombre (ou la part) de cet élément dans une infobulle.

@@ -16,7 +16,7 @@
       text-align: center;
 
       p {
-        @extend .h3;
+        @extend .h2;
         line-height: $line-height-base;
         font-weight: $font-weight-normal;
       }

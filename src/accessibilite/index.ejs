@@ -6,10 +6,11 @@
   </head>
 
   <body class="l-accessibilite" id="top">
+    <%- include('./../_partials/skip-links') %>
 
     <%- include('./../_sections/header', {pathDepth: './..'}) %>
 
-    <main class="s-main" role="main">
+    <main id="main" role="main" class="s-main" tabindex="-1">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
@@ -30,7 +31,7 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><span>#</span><strong>Accessibilité</strong></h1>
+              <h1 class="h1-hero"><span>#</span><strong>Accessibilité</strong></h1>
             </div>
           </div>
         </div>
@@ -41,17 +42,17 @@
           <div class="s-pageoutro__row row">
             <div class="s-pageoutro__col col-12 d-flex justify-content-center">
                 <article>
-                  <h2 class="h2 mb-5"><strong>Déclaration d'accessibilité</strong></h2>
+                  <h2 class="h1 mb-5"><strong>Déclaration d'accessibilité</strong></h2>
                   <p>La <strong>Délégation générale à l'Emploi et à la Formation professionnelle</strong> s'engage à rendre son service accessible, conformément à l'article 47 de la loi n° 2005-102 du 11 février 2005.</p>
                   <p>Cette déclaration d'accessibilité s'applique au site web <strong>Le pilotage de l'inclusion</strong>.</p>
 
-                  <p class="h3 mb-1">État de conformité</p>
+                  <p class="h2 mb-1">État de conformité</p>
                   <p>Le pilotage de l'inclusion est non conforme avec le RGAA 4.1. Le site n'a pas encore été audité.</p>
 
-                  <p class="h3 mb-1">Établissement de cette déclaration d'accessibilité</p>
+                  <p class="h2 mb-1">Établissement de cette déclaration d'accessibilité</p>
                   <p>Cette déclaration a été établie le 19 août 2021.</p>
 
-                  <p class="h3 mb-1">Amélioration et contact</p>
+                  <p class="h2 mb-1">Amélioration et contact</p>
                   <p class="mb-0">Si vous n'arrivez pas à accéder à un contenu ou à un service, vous pouvez nous contacter pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.</p>
                   <ul>
                     <li>E-mail : <a href="mailto:contact@inclusion.beta.gouv.fr" class="text-decoration-underline">contact@inclusion.beta.gouv.fr</a></li>
@@ -59,7 +60,7 @@
                   </ul>
                   <p>Nous essayons de répondre dans les 2 jours ouvrés.</p>
 
-                  <p class="h3 mb-1">Voie de recours</p>
+                  <p class="h2 mb-1">Voie de recours</p>
                   <p>Cette procédure est à utiliser dans le cas suivant : vous avez signalé au responsable du site internet un défaut d'accessibilité qui vous empêche d'accéder à un contenu ou à un des services du portail et vous n'avez pas obtenu de réponse satisfaisante.</p>
 
                   <p class="mb-0">Vous pouvez :</p>
