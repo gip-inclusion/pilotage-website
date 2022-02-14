@@ -1,5 +1,5 @@
 <script type="text/javascript" src="<%= typeof pathDepth != 'undefined' ? pathDepth : './..' %>/javascripts/app.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.9.3/tarteaucitron.js"></script>
 <script type="text/javascript">
   tarteaucitron.init({
   "privacyUrl": "", /* Privacy policy url */
@@ -35,11 +35,11 @@
   <script type="text/javascript">
     /* Matomo opt-in / opt-out */
     tarteaucitron.user.matomoId = 146;
-    tarteaucitron.user.matomoHost = "https://stats.data.gouv.fr/";
+    tarteaucitron.user.matomoHost = "//stats.data.gouv.fr/";
     (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
   </script>
-  <!-- Hotjar Tracking Code for https://pilotage.inclusion.beta.gouv.fr/ -->
-  <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2582308,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+  <!-- Hotjar Tracking Code for //pilotage.inclusion.beta.gouv.fr/ -->
+  <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2582308,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv='); </script>
   <!-- Matomo -->
   <script>
     var _paq = window._paq = window._paq || [];
@@ -47,7 +47,7 @@
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u="https://stats.data.gouv.fr/";
+      var u="//stats.data.gouv.fr/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
       _paq.push(['setSiteId', '146']);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -57,7 +57,7 @@
   <!-- End Matomo Code -->
 <% } %>
 <% if (locals.hasIframeResizer === true ) { %>
-<script src="https://stats.inclusion.beta.gouv.fr/app/iframeResizer.js"></script>
+<script src="//stats.inclusion.beta.gouv.fr/app/iframeResizer.js"></script>
 <script>
   iFrameResize({}, '#iframeMetabase');
 </script>
