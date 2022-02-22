@@ -6,6 +6,7 @@ var jwt = require('jsonwebtoken');
 
 // Vars
 var stickyNav = $('#header');
+const rootStyle = getComputedStyle(document.body);
 stickyNav.data('top', stickyNav.offset().top);
 
 // Initialisation
@@ -24,8 +25,25 @@ $(window).on('scroll', function() {
 
 $('[data-toggle=burger]').on('click tap', function(e) {
   e.preventDefault();
+  stickyNav.data('top', stickyNav.offset().top);
   stickyNav.toggleClass('is-opened');
+}).on('keypress', function(e) {
+  if ( e.which == 13 ) {
+    e.preventDefault();
+    stickyNav.data('top', stickyNav.offset().top);
+    stickyNav.toggleClass('is-opened');
+ }
 });
+
+$('.input-group .form-control').on('focus', function(e) {
+  e.preventDefault();
+  $(this).parent('.input-group').find('.input-group-text').css('border-color', rootStyle.getPropertyValue('--gray-800'));
+});
+$('.input-group .form-control').on('blur', function(e) {
+  e.preventDefault();
+  $(this).parent('.input-group').find('.input-group-text').css('border-color', rootStyle.getPropertyValue('--gray-600'));
+});
+
 
 $('.track-click-zapier button').on('click tap', function() {
   var thisButton = $(this);
