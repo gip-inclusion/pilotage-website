@@ -6,10 +6,11 @@
   </head>
 
   <body class="l-donner-votre-avis " id="top">
+    <%- include('./../../_partials/skip-links') %>
 
     <%- include('./../../_sections/header', {pathDepth: './../..', currentItem: 'tableaux-de-bord'}) %>
 
-    <main class="s-main" role="main">
+    <main id="main" role="main" class="s-main" tabindex="-1">
 
       <section class="c-breadcrumb c-breadcrumb--pilotage">
         <div class="container">
