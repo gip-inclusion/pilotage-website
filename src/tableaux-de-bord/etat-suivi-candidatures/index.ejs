@@ -20,7 +20,7 @@
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                   <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Employeurs</li>
+                  <li class="breadcrumb-item active" aria-current="page">État et suivi des candidatures</li>
                 </ol>
               </nav>
             </div>
@@ -32,25 +32,25 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><strong>Employeurs</strong></h1>
+              <h1 class="h1"><strong>État et suivi des candidatures</strong></h1>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- onload="iFrameResize({}, this)" -->
       <section class="s-embed">
         <div class="s-embed__container container">
           <div class="s-embed__row row">
             <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/54" title="Quelle est la typologie des employeurs inclusifs sur mon territoire ?" id="iframeMetabase" allowtransparency></iframe>
+              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/116" title="Où se situent les tensions de recrutement ?" id="iframeMetabase" allowtransparency></iframe>
             </div>
           </div>
         </div>
       </section>
 
+      <%- include('./../../_sections/alert-tdb', {pathDepth: './../..'}) %>
       <%- include('./../../_sections/guide-tdb', {pathDepth: './../..'}) %>
-
-
 
     </main>
 
@@ -58,5 +58,4 @@
 
     <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
   </body>
-
 </html>

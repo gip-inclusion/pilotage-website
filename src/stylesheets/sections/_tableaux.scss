@@ -1,10 +1,10 @@
 .s-tableaux {
-  padding-top: map-get($spacers, 3);
-  padding-bottom: map-get($spacers, 4);
+  margin-top: map-get($spacers, 3);
+  margin-bottom: map-get($spacers, 5);
 
   @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 4);
-    padding-bottom: map-get($spacers, 6);
+    margin-top: map-get($spacers, 6);
+    margin-bottom: map-get($spacers, 6);
   }
 
   &__container {
@@ -12,53 +12,30 @@
   }
 
   &__col {
-    &--title {
-      text-align: center;
-    }
 
     &--grid {
       display: grid;
       grid-template-columns: 1fr;
       grid-column-gap: 0;
       grid-row-gap: map-get($spacers, 5);
-      margin: map-get($spacers, 4) 0 0 0;
 
       @include media-breakpoint-up(lg) {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: map-get($spacers, 5);
         grid-row-gap: map-get($spacers, 5);
-        margin: map-get($spacers, 6) 0 map-get($spacers, 5) 0;
-        min-height: 280px;
       }
 
       > div {
-        @extend .px-4;
-        @extend .pt-4;
-        @extend .pb-3;
+        @extend .p-3;
         border-radius: $border-radius-lg;
         box-shadow: $box-shadow-lg;
         transition: $transition-base;
         border-bottom: 10px solid $pilotage;
-        background: no-repeat top left url('../images/tableaux-visuel-02.png'), $white no-repeat right center url('../images/tableaux-visuel-03.png');
+        min-height: 190px;
 
         &:hover {
           box-shadow: $box-shadow-xl;
         }
-      }
-
-      h2 {
-        margin-bottom: map-get($spacers, 4);
-
-        span {
-          @extend .mr-2;
-          color: $pilotage;
-        }
-      }
-
-      p {
-        @extend .h2;
-        line-height: $line-height-base;
-        font-weight: $font-weight-normal;
       }
     }
 

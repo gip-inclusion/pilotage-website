@@ -20,7 +20,7 @@
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                   <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Stats des emplois</li>
+                  <li class="breadcrumb-item active" aria-current="page">Stats du service emplois de l’inclusion</li>
                 </ol>
               </nav>
             </div>
@@ -32,7 +32,7 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><strong>Stats des emplois</strong></h1>
+              <h1 class="h1"><strong>Stats du service emplois de l’inclusion</strong></h1>
             </div>
           </div>
         </div>
@@ -43,12 +43,13 @@
         <div class="s-embed__container container">
           <div class="s-embed__row row">
             <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/43" title="Statistiques avancées des emplois de l'inclusion" id="iframeMetabase" allowtransparency></iframe>
+              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/43" title="Statistiques avancées de l’utilisation du service disponible à l’adresse https://emplois.inclusion.beta.gouv.fr" id="iframeMetabase" allowtransparency></iframe>
             </div>
           </div>
         </div>
       </section>
 
+      <%- include('./../../_sections/alert-tdb', {pathDepth: './../..'}) %>
       <%- include('./../../_sections/guide-tdb', {pathDepth: './../..'}) %>
 
     </main>
