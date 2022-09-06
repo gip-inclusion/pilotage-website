@@ -195,7 +195,7 @@
               <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord</a></li>
+                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Postes en tension</li>
                 </ol>
               </nav>
@@ -208,7 +208,7 @@
         <div class="s-pageintro__container container">
           <div class="s-pageintro__row row">
             <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1-hero"><strong>Postes en tension</strong></h1>
+              <h1 class="h1"><strong>Postes en tension</strong></h1>
             </div>
           </div>
         </div>
@@ -226,14 +226,40 @@
 
       <section class="s-section">
   <div class="s-section__container container">
+    <div class="row mb-1 mb-md-3">
+      <div class="col-12">
+        <div class="alert alert-warning alert-dismissible fade show" role="status">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+            <i class="ri-close-line"></i>
+          </button>
+          <div class="row">
+            <div class="col-auto pr-0">
+              <i class="ri-information-line ri-xl text-danger"></i>
+            </div>
+            <div class="col">
+              <p class="mb-2"><strong>Problème d’affichage ?</strong></p>
+              <p class="mb-0">
+                Si vous n’avez pas de tableau de bord affiché ci-dessus, il est nécessaire d’effacer vos cookies. Pour savoir comment faire cette action sur votre navigateur, vous pouvez consulter le site suivant : <br>
+                <a href="https://www.commentcamarche.net/securite/confidentialite/671-supprimer-les-cookies-dans-un-navigateur-web/" target="_blank" title="Pour savoir comment effacer vos cookies, consulter le site suivant (lien externe)">https://www.commentcamarche.net/securite/confidentialite/671-supprimer-les-cookies-dans-un-navigateur-web/</a> <i class="ri-external-link-line"></i>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-1 mb-md-3">
+      <div class="col-12">
+        <h2 class="text-secondary">Aide et ressources</h2>
+      </div>
+    </div>
     <div class="s-section__row row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <div class="col mb-3 mb-md-5">
         <div class="card c-card c-card--communaute c-card--hovershadow h-100 w-100">
           <div class="card-header">
-            <h2 class="h2">Guide d’utilisation</h2>
+            <h3 class="h3">Guide d’utilisation</h3>
           </div>
           <div class="card-body">
-            <p><strong>Aide à la lecture et à l'utilisation des tableaux de bord</strong></p>
+            <p>Aide à la lecture et à l'utilisation des tableaux de bord</p>
           </div>
           <div class="card-footer text-right">
             <a href="https://communaute.inclusion.beta.gouv.fr/doc/pilotage/guide-d-utilisation/" target="_blank" class="btn btn-ico btn-link stretched-link">
@@ -246,10 +272,10 @@
       <div class="col mb-3 mb-md-5">
         <div class="card c-card c-card--communaute c-card--hovershadow h-100 w-100">
           <div class="card-header">
-            <h2 class="h2">Dictionnaire des indicateurs</h2>
+            <h3 class="h3">Dictionnaire des indicateurs</h3>
           </div>
           <div class="card-body">
-            <p><strong>Liste de tous les indicateurs présentant leurs définitions, formules et sources de données.</strong></p>
+            <p>Liste de tous les indicateurs présentant leurs définitions, formules et sources de données.</p>
           </div>
           <div class="card-footer text-right">
             <a href="https://communaute.inclusion.beta.gouv.fr/doc/pilotage/dictionnaire-des-indicateurs/" target="_blank" class="btn btn-ico btn-link stretched-link">
@@ -262,14 +288,46 @@
       <div class="col mb-3 mb-md-5">
         <div class="card c-card c-card--communaute c-card--hovershadow h-100 w-100">
           <div class="card-header">
-            <h2 class="h2">Glossaire</h2>
+            <h3 class="h3">Glossaire</h3>
           </div>
           <div class="card-body">
-            <p><strong>Comprenez les sigles utilisés dans nos tableaux</strong></p>
+            <p>Comprenez les sigles utilisés dans nos tableaux</p>
           </div>
           <div class="card-footer text-right">
             <a href="https://communaute.inclusion.beta.gouv.fr/doc/communaute/glossaire-de-linclusion/" target="_blank" class="btn btn-ico btn-link stretched-link">
               <span>Accéder au glossaire</span>
+              <i class="ri-external-link-line ri-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3 mb-md-5">
+        <div class="card c-card c-card--communaute c-card--hovershadow h-100 w-100">
+          <div class="card-header">
+            <h3 class="h3">Suggestions</h3>
+          </div>
+          <div class="card-body">
+            <p>Nos tableaux de bord sont amenés à évoluer pour vous aider au mieux, n’hésitez pas à nous faire vos retours</p>
+          </div>
+          <div class="card-footer text-right">
+            <a href="https://communaute.inclusion.beta.gouv.fr/suggestions-le-pilotage-de-linclusion/" target="_blank" class="btn btn-ico btn-link stretched-link">
+              <span>Accéder aux suggestions</span>
+              <i class="ri-external-link-line ri-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3 mb-md-5">
+        <div class="card c-card c-card--communaute c-card--hovershadow h-100 w-100">
+          <div class="card-header">
+            <h3 class="h3">Aide et support</h3>
+          </div>
+          <div class="card-body">
+            <p>Si notre documentation ne vous renseigne pas suffisamment, vous pouvez contacter notre support</p>
+          </div>
+          <div class="card-footer text-right">
+            <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" target="_blank" class="btn btn-ico btn-link stretched-link">
+              <span>Accéder au dictionnaire</span>
               <i class="ri-external-link-line ri-lg"></i>
             </a>
           </div>
