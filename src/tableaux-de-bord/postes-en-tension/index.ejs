@@ -56,6 +56,22 @@
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
     <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
-  </body>
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script>
+      window.TallyConfig = {
+        "formId": "w81gYx",
+        "popup": {
+          "emoji": {
+            "text": "👋",
+            "animation": "wave"
+          },
+          "open": {
+            "trigger": "exit"
+          }
+        }
+      };
+    </script>
+</body>
 
 </html>
