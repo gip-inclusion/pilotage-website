@@ -38,17 +38,19 @@
         </div>
       </section>
 
-      <section class="s-embed">
-        <div class="s-embed__container container">
-          <div class="s-embed__row row">
-            <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/140" title="Combien d'ETP conventionnés en IAE et où ?" id="iframeMetabase" allowtransparency></iframe>
+      <section class="s-pageoutro">
+        <div class="s-pageoutro__container container">
+          <div class="s-pageoutro__row row">
+            <div class="s-pageoutro__col col-12 d-flex justify-content-center">
+                <article>
+                  <h2>Du changement sur ce tableau de bord</h2>
+                  <p class="fs-lg">Nous vous informons que ce tableau de bord n'est plus accessible car nous travaillons à améliorer la fiabilité du calcul des indicateurs dans l'objectif de faciliter vos échanges avec vos partenaires. Nous vous prions d'accepter nos excuses pour la gêne occasionnée. L'équipe pilotage de l'inclusion se tient à votre disposition pour toute question via notre <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" class="font-weight-bold" target="_blank">formulaire de contact</a><i class="ri-external-link-line ml-1 font-weight-bold"></i>.</p>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <%- include('./../../_sections/alert-tdb', {pathDepth: './../..'}) %>
       <%- include('./../../_sections/guide-tdb', {pathDepth: './../..'}) %>
 
     </main>
@@ -56,22 +58,6 @@
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
     <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
-
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script>
-      window.TallyConfig = {
-        "formId": "3jaqXE",
-        "popup": {
-          "emoji": {
-            "text": "👋",
-            "animation": "wave"
-          },
-          "open": {
-            "trigger": "exit"
-          }
-        }
-      };
-    </script>
 
   </body>
 
