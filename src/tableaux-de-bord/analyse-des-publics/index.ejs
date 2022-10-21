@@ -5,57 +5,89 @@
     <%- include('./../../_partials/head', {pathDepth: '/../../' }) %>
   </head>
 
-  <body id="top">
+  <body class="l-tableaux-de-bord-129" id="top">
     <%- include('./../../_partials/skip-links') %>
 
-    <%- include('./../../_sections/header', {pathDepth: './../..', currentItem: 'tableaux-de-bord'}) %>
+      <%- include('./../../_sections/header', {pathDepth: './../..' , currentItem: 'tableaux-de-bord' }) %>
 
-    <main id="main" role="main" class="s-main" tabindex="-1">
+        <main id="main" role="main" class="s-main" tabindex="-1">
 
-      <section class="c-breadcrumb c-breadcrumb--pilotage">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Analyse des publics</li>
-                </ol>
-              </nav>
+          <section class="c-breadcrumb c-breadcrumb--pilotage">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                      <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Analyse des publics</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section class="s-pageintro">
-        <div class="s-pageintro__container container">
-          <div class="s-pageintro__row row">
-            <div class="s-pageintro__col s-pageintro__col--title col-12">
-              <h1 class="h1"><strong>Analyse des publics</strong></h1>
+          <section class="s-pageintro">
+            <div class="s-pageintro__container container">
+              <div class="s-pageintro__row row">
+                <div class="s-pageintro__col s-pageintro__col--title col-12">
+                  <h1 class="h1"><strong>Analyse des publics</strong></h1>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section class="s-embed">
-        <div class="s-embed__container container">
-          <div class="s-embed__row row">
-            <div class="s-embed__col col-12" id="embedMetabase">
-              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/129" title="Quels critères remplissent les candidats sur les emplois de l'inclusion ?" id="iframeMetabase" allowtransparency></iframe>
+          <section class="s-section m-0">
+            <div class="s-section__container container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="alert alert-info" role="status">
+                    <div class="row">
+                      <div class="col-auto pr-0">
+                        <i class="ri-information-line ri-xl text-info"></i>
+                      </div>
+                      <div class="col">
+                        <p class="mb-2"><strong>Ce tableau de bord est en cours de refonte par notre équipe pour répondre au mieux à vos attentes.</strong></p>
+                        <p>Vous avez une idée pour l’améliorer ?</p>
+                        <ul class="list-custom">
+                          <li class="mt-2">
+                            Connectez-vous sur La communauté de l'inclusion pour déposer votre proposition dans <a href="https://communaute.inclusion.beta.gouv.fr/suggestions-le-pilotage-de-linclusion/" target="_blank">notre espace dédié aux suggestions</a>.
+                          </li>
+                          <li class="mt-2">
+                            Si votre proposition est plébiscitée par la communauté des professionnels de l'inclusion, elle sera étudiée par l'équipe des emplois de l'inclusion.
+                          </li>
+                          <li class="mt-2">
+                            Si l'idée étudiée est retenue, nous vous proposerons de participer à un atelier de co-construction.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <%- include('./../../_sections/alert-tdb', {pathDepth: './../..'}) %>
-      <%- include('./../../_sections/guide-tdb', {pathDepth: './../..'}) %>
 
-    </main>
+          <section class="s-embed">
+            <div class="s-embed__container container">
+              <div class="s-embed__row row">
+                <div class="s-embed__col col-12" id="embedMetabase">
+                  <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/129" title="Quels critères remplissent les candidats sur les emplois de l'inclusion ?" id="iframeMetabase" allowtransparency></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
+          <%- include('./../../_sections/alert-tdb', {pathDepth: './../..' }) %>
+            <%- include('./../../_sections/guide-tdb', {pathDepth: './../..' }) %>
 
-    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
+        </main>
+
+        <%- include('./../../_sections/footer', {pathDepth: './../..' }) %>
+
+          <%- include('./../../_partials/footer-scripts', {pathDepth: './../..' , hasTracking: true, hasIframeResizer: true }) %>
 
   </body>
 
