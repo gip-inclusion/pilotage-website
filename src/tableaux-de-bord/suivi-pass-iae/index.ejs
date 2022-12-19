@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <%- include('./../../_partials/head', {pathDepth: '/../../' }) %>
+  </head>
+
+  <body id="top">
+    <%- include('./../../_partials/skip-links') %>
+
+    <%- include('./../../_sections/header', {pathDepth: './../..', currentItem: 'tableaux-de-bord'}) %>
+
+    <main id="main" role="main" class="s-main" tabindex="-1">
+
+      <section class="c-breadcrumb c-breadcrumb--pilotage">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                  <li class="breadcrumb-item"><a href="/tableaux-de-bord">Tableaux de bord publics</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Suivi des Pass IAE</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-pageintro">
+        <div class="s-pageintro__container container">
+          <div class="s-pageintro__row row">
+            <div class="s-pageintro__col s-pageintro__col--title col-12">
+              <h1 class="h1"><strong>Suivi des Pass IAE</strong></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- onload="iFrameResize({}, this)" -->
+      <section class="s-embed">
+        <div class="s-embed__container container">
+          <div class="s-embed__row row">
+            <div class="s-embed__col col-12" id="embedMetabase">
+              <iframe src="https://emplois.inclusion.beta.gouv.fr/stats/pilotage/217" title="Combien de Pass IAE arrivent à expiration durant l’année à venir ?" id="iframeMetabase" allowtransparency></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <%- include('./../../_sections/alert-tdb', {pathDepth: './../..'}) %>
+      <%- include('./../../_sections/guide-tdb', {pathDepth: './../..'}) %>
+
+    </main>
+
+    <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
+
+    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
+  </body>
+</html>
