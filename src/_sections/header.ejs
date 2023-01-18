@@ -16,7 +16,7 @@
             </a>
           </li>
           <li>
-            <a href="https://communaute.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" title="La communauté de l'inclusion (lien externe)">
+            <a href="https://communaute-experimentation.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" title="La communauté de l'inclusion (lien externe)">
               <span>La communauté</span>
               <i class="ri-arrow-right-up-line ri-lg"></i>
             </a>
@@ -58,11 +58,6 @@
             <li>
               <a href="/tableaux-de-bord" rel="noopener" <% if (locals.currentItem === 'tableaux-de-bord' ) { %>class="is-active"<% } %>>
                 <span>Tableaux de bord publics</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank">
-                <span>Aide et assistance</span>
               </a>
             </li>
           </ul>
@@ -107,12 +102,19 @@
             </li>
             <li>
               <a href="/tableaux-de-bord" rel="noopener" <% if (locals.currentItem === 'tableaux-de-bord' ) { %>class="is-active"<% } %>>
-                <span>Tableaux de bord publics</span>
+                <span>Tableaux de bord privés</span>
               </a>
             </li>
             <li>
-              <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank">
+              <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank" title="Accéder à l'espace de documentation (nouvel onglet)">
                 <span>Aide et assistance</span>
+                <i class="ri-arrow-right-up-line ri-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://communaute.inclusion.beta.gouv.fr/communautes/les-actus-du-pilotage/" rel="noopener" target="_blank" title="Accéder à l'espace de documentation (nouvel onglet)">
+                <span>Actualités</span>
+                <i class="ri-arrow-right-up-line ri-lg"></i>
               </a>
             </li>
           </ul>
@@ -132,7 +134,7 @@
               </a>
             </li>
             <li>
-              <a href="https://communaute.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" title="La communauté de l'inclusion (lien externe)">
+              <a href="https://communaute-experimentation.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" title="La communauté de l'inclusion (lien externe)">
                 <span>La communauté</span>
                 <i class="ri-arrow-right-up-line ri-lg"></i>
               </a>
@@ -155,3 +157,27 @@
     </div>
   </section>
 </header>
+<section class="s-postheader d-none d-xl-block">
+  <div class="container s-postheader__container">
+      <div class="row">
+          <div class="col-12 s-postheader__col s-postheader__col--nav d-flex align-items-center">
+              <nav role="navigation">
+                  <ul>
+                      <li>
+                        <a href="https://communaute.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank" title="Accéder à l'espace de documentation (nouvel onglet)">
+                          <span>Aide et assistance</span>
+                          <i class="ri-arrow-right-up-line ri-lg"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://communaute.inclusion.beta.gouv.fr/communautes/les-actus-du-pilotage/" rel="noopener" target="_blank" title="Accéder à l'espace de documentation (nouvel onglet)">
+                          <span>Actualités</span>
+                          <i class="ri-arrow-right-up-line ri-lg"></i>
+                        </a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
+</section>
