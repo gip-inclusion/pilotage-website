@@ -2,23 +2,25 @@
 
 Le pilotage de l'inclusion
 
-## Consignes et commandes d'intégration et de modification du html
+## Consignes de développement en local
 
 Nécessite node `v12.22.0` ou superieur pour installer les dépendances `npm install`
 
-Ensuite, vous pouvez :
 1. Lancer la version locale en live reload avec `npm run dev`
 2. Intégrer ou modifier le html, scss ou js dans le répertoire `src`
 3. Générer une version de déploiement otimisée dans le répertoire `dist` avec la commande `npm run build`
-4. Commiter les modifications sur la branche `main`
-5. Commiter sur la branche `gh-pages` et déployer automatiquement sur github pages avec `npm run deploy`
+4. Faire une pull request
 
 
-## Consignes de mise à jour du Theme Itou
+## Consignes de déploiement en production sur github pages
+1. Déployer automatiquement le contenu  du répertoire `dist` de la branche `master` sur github pages avec `npm run deploy`
 
-Cette landing plateforme utilise le [Theme Itou](https://github.com/betagouv/itou-theme)
+
+## Consignes de mise à jour du Thème Itou
+
+Le pilotage de l'inclusion utilise le [Thème Itou](https://github.com/betagouv/itou-theme)
 
 Pour mettre à jour le thème, vous devrez :
-1. modifier le n° de version du thème dans le fichier `package.json`
-2. lancer la commande `npm update itoutheme`
-3. puis importer les nouveaux médias éventuels via `npm run importTheme`
+1. Modifier le n° de version du thème dans le fichier `package.json`
+2. Lancer la commande `npm update itoutheme`
+3. Importer les nouveaux médias éventuels via `npm run importTheme`
