@@ -516,12 +516,14 @@
   (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
 </script>
 
+
   <script type="text/javascript">
     /* Matomo opt-in / opt-out */
     tarteaucitron.user.matomoId = 146;
     tarteaucitron.user.matomoHost = "https://matomo.inclusion.beta.gouv.fr/";
     (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
   </script>
+
 
 
 <script src="//stats.inclusion.beta.gouv.fr/app/iframeResizer.js"></script>
@@ -531,21 +533,68 @@
 
 
 
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script>
-      window.TallyConfig = {
-        "formId": "mD4Eo5",
-        "popup": {
-          "emoji": {
-            "text": "👋",
-            "animation": "wave"
-          },
-          "open": {
-            "trigger": "exit"
-          }
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
+
+
+
+
+  <script defer>
+    // Any given Tally popup will not be shown more than once every `minDaysBetweenDisplays` days.
+    const minDaysBetweenDisplays = 14;
+    const delayBeforeShowingPopupInSeconds = 45;
+    const formId = 'mD4Eo5';
+    const key = 'statsTallyPopupLastShown-' + formId;
+    const todaysDate = new Date();
+
+    function supportsLocalStorage() {
+      try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+      } catch (e) {
+        return false;
+      }
+    };
+
+    function stopShowingPopupForAWhile() {
+      localStorage.setItem(key, JSON.stringify(todaysDate));
+    }
+
+    function displayTallyPopup() {
+      window.Tally.openPopup(formId, {
+        emoji: {
+          text: "👋",
+          animation: "wave"
+        },
+        onClose: () => {
+          stopShowingPopupForAWhile();
+        },
+        onSubmit: () => {
+          stopShowingPopupForAWhile();
         }
+      });
+    };
+
+    function shouldDisplayTallyPopup() {
+      if (!supportsLocalStorage()) {
+        return true;
+      }
+      infoKey = localStorage.getItem(key);
+      if (infoKey) {
+        const lastShown = Date.parse(JSON.parse(localStorage.getItem(key)));
+        const milliSecondsElapsed = todaysDate - lastShown;
+        const daysElapsed = milliSecondsElapsed / (1000 * 3600 * 24);
+        if (daysElapsed <= minDaysBetweenDisplays) {
+          return false;
+        };
       };
-    </script>
+      return true;
+    };
+
+    if (shouldDisplayTallyPopup()) {
+      setTimeout(displayTallyPopup, delayBeforeShowingPopupInSeconds * 1000);
+    };
+  </script>
+
 
 </body>
 </html>
