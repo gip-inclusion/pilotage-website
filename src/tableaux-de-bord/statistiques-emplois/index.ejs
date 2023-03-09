@@ -56,23 +56,6 @@
 
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
-    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
-
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script>
-      window.TallyConfig = {
-        "formId": "mD4Eo5",
-        "popup": {
-          "emoji": {
-            "text": "👋",
-            "animation": "wave"
-          },
-          "open": {
-            "trigger": "exit"
-          }
-        }
-      };
-    </script>
-
+    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true, hasTallyPopup: 'mD4Eo5'}) %>
 </body>
 </html>

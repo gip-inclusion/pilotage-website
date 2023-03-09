@@ -65,24 +65,6 @@
 
     <%- include('./../../_sections/footer', {pathDepth: './../..'}) %>
 
-    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true }) %>
-
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script>
-      window.TallyConfig = {
-        "formId": "w5BgYd",
-        "popup": {
-          "emoji": {
-            "text": "👋",
-            "animation": "wave"
-          },
-          "open": {
-            "trigger": "exit"
-          }
-        }
-      };
-      Tally.loadEmbeds();
-    </script>
-
+    <%- include('./../../_partials/footer-scripts', {pathDepth: './../..', hasTracking: true, hasIframeResizer: true, hasTallyPopup: 'w5BgYd', hasTallyEmbed: true}) %>
   </body>
 </html>

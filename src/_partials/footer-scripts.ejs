@@ -29,7 +29,8 @@
   tarteaucitron.user.googleFonts = ['Roboto', 'Covered By Your Grace'];
   (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
 </script>
-<% if (locals.hasTracking === true ) { %>
+
+<% if (locals.hasTracking === true) { %>
   <script type="text/javascript">
     /* Matomo opt-in / opt-out */
     tarteaucitron.user.matomoId = 146;
@@ -37,9 +38,78 @@
     (tarteaucitron.job = tarteaucitron.job || []).push('matomo');
   </script>
 <% } %>
-<% if (locals.hasIframeResizer === true ) { %>
+
+<% if (locals.hasIframeResizer === true) { %>
 <script src="//stats.inclusion.beta.gouv.fr/app/iframeResizer.js"></script>
 <script>
   iFrameResize({}, '#iframeMetabase');
 </script>
+<% } %>
+
+<% if (locals.hasTallyPopup || locals.hasTallyEmbed === true) { %>
+  <script async src="https://tally.so/widgets/embed.js"></script>
+<% } %>
+
+<% if (locals.hasTallyEmbed === true) { %>
+  <script defer>
+    Tally.loadEmbeds();
+  </script>
+<% } %>
+
+<% if (locals.hasTallyPopup) { %>
+  <script defer>
+    // Any given Tally popup will not be shown more than once every `minDaysBetweenDisplays` days.
+    const minDaysBetweenDisplays = 14;
+    const delayBeforeShowingPopupInSeconds = 45;
+    const formId = '<%= locals.hasTallyPopup %>';
+    const key = 'statsTallyPopupLastShown-' + formId;
+    const todaysDate = new Date();
+
+    function supportsLocalStorage() {
+      try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+      } catch (e) {
+        return false;
+      }
+    };
+
+    function stopShowingPopupForAWhile() {
+      localStorage.setItem(key, JSON.stringify(todaysDate));
+    }
+
+    function displayTallyPopup() {
+      window.Tally.openPopup(formId, {
+        emoji: {
+          text: "👋",
+          animation: "wave"
+        },
+        onClose: () => {
+          stopShowingPopupForAWhile();
+        },
+        onSubmit: () => {
+          stopShowingPopupForAWhile();
+        }
+      });
+    };
+
+    function shouldDisplayTallyPopup() {
+      if (!supportsLocalStorage()) {
+        return true;
+      }
+      infoKey = localStorage.getItem(key);
+      if (infoKey) {
+        const lastShown = Date.parse(JSON.parse(localStorage.getItem(key)));
+        const milliSecondsElapsed = todaysDate - lastShown;
+        const daysElapsed = milliSecondsElapsed / (1000 * 3600 * 24);
+        if (daysElapsed <= minDaysBetweenDisplays) {
+          return false;
+        };
+      };
+      return true;
+    };
+
+    if (shouldDisplayTallyPopup()) {
+      setTimeout(displayTallyPopup, delayBeforeShowingPopupInSeconds * 1000);
+    };
+  </script>
 <% } %>
