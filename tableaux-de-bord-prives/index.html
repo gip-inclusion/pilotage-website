@@ -38,201 +38,90 @@
 </nav>
 
 
-  <section class="s-preheader d-none d-xl-block">
-  <div class="container s-preheader__container">
-    <div class="row">
-      <div class="col-12 s-preheader__col d-flex align-items-center justify-content-end">
-        <ul>
-          <li>
-            <a href="https://inclusion.beta.gouv.fr" class="is-plateforme" rel="noopener" target="_blank" aria-label="La Plateforme de l'inclusion (lien externe)">
-              <span>La plateforme</span>
-              <i class="ri-arrow-right-up-line ri-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://emplois.inclusion.beta.gouv.fr" class="is-emploi" rel="noopener" target="_blank" aria-label="Les emplois de l'inclusion (lien externe)">
-              <span>Les emplois</span>
-              <i class="ri-arrow-right-up-line ri-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://communaute.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" aria-label="La communauté de l'inclusion (lien externe)">
-              <span>La communauté</span>
-              <i class="ri-arrow-right-up-line ri-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://lemarche.inclusion.beta.gouv.fr" class="is-marche" rel="noopener" target="_blank" aria-label="Le marché de l'inclusion (lien externe)">
-              <span>Le marché</span>
-              <i class="ri-arrow-right-up-line ri-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://pilotage.inclusion.beta.gouv.fr" class="is-pilotage" rel="noopener" target="_blank" aria-label="Le pilotage de l'inclusion (lien externe)">
-              <span>Le pilotage</span>
-              <i class="ri-arrow-right-up-line ri-lg"></i>
-            </a>
-          </li>
-        </ul>
+  <header role="banner" id="header">
+  <section class="s-header">
+    <div class="s-header__container container">
+      <div class="s-header__row row">
+        <div class="s-header__col s-header__col--logo-ministere col-auto d-flex align-items-center pr-0">
+          <a href="#top" class="s-header__logo-ministere"><img src="./../images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
+        </div>
+        <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center pl-0">
+          <a href="/"><img src="./../images/logo-pilotage-inclusion.svg " alt="Le piloatage de l'inclusion"></a>
+        </div>
+        <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
+          <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
+            <ul>
+              <li>
+                <a href="https://documentation.inclusion.beta.gouv.fr/aide/pilotage/" class="btn btn-link" rel="noopener" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion'">
+                  Besoin d'aide ?
+                </a>
+              </li>
+              <li>
+                <a href="/inscription-newsletter" class="btn btn-outline-primary">Infolettre</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+          <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
+          <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
+        </div>
+        <div id="burgerNav">
+          <nav role="navigation" aria-label="Navigation principale pour mobile">
+            <ul>
+              <li>
+                <a href="https://documentation.inclusion.beta.gouv.fr/aide/pilotage/" class="btn btn-link mh-auto p-0">
+                  Besoin d'aide ?
+                </a>
+              </li>
+              <li>
+                <a href="/inscription-newsletter" class="btn btn-outline-primary">Infolettre</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="/tableaux-de-bord" rel="noopener" >Tableaux de bord publics</a>
+              </li>
+              <li>
+                <a href="/tableaux-de-bord-prives" rel="noopener" class="is-active">Tableaux de bord privés</a>
+              </li>
+              <li>
+                <a href="https://plateforme-inclusion.notion.site/Actualit-s-du-service-pilotage-de-l-inclusion-bc33815555874210b161063b203639c8?mtm_campaign=Notion-Page-Actualités-accueil&mtm_kwd=Page-Actualités-accueil" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)">
+                  <span>Actualités</span>
+                  <i class="ri-arrow-right-up-line ri-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<header class="s-header s-header--pilotage sticky-top" role="banner" id="header">
-  <section class="s-header__container container">
-    <div class="s-header__row row">
-      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center pr-0 pr-md-3">
-        <a href="#top" class="s-header__logo-ministere"><img src="./../images/logo-ministere-emploi.svg" alt="Ministère du travail, du plein emploi et de l'insertion"></a>
-      </div>
-      <div class="s-header__col s-header__col--logo col-auto d-flex align-items-center px-0 px-md-3">
-        <a href="/"><img src="./../images/logo-pilotage-inclusion.svg" alt="Pilotage de l'inclusion"></a>
-      </div>
-      <div class="s-header__col s-header__col--nav col d-none d-xl-inline-flex d-xl-flex align-items-center justify-content-end">
-        <nav id="nav-primary" role="navigation" aria-label="Navigation principale">
-          <ul>
-            <li>
-              <a href="/tableaux-de-bord" rel="noopener" >
-                <span>Tableaux de bord publics</span>
-              </a>
-            </li>
-            <li>
-              <a href="/tableaux-de-bord-prives" rel="noopener" class="is-active">
-                <span>Tableaux de bord privés</span>
-              </a>
-            </li>
-            <li>
-              <a href="/inscription-newsletter" class="btn btn-block btn-ico btn-link pl-0">
-                <i class="ri-mail-send-line ri-lg" aria-hidden="true"></i>
-                <span>Newsletter</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger" aria-controls="burgerNav" tabindex="0">
-        <span id="burger">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="51" viewBox="0 0 36 51" role="img" aria-labelledby="title_burger">
-            <g fill="none" fill-rule="evenodd">
-              <g fill="#000638" fill-rule="nonzero" transform="translate(2)">
-                <rect width="32" height="4" rx="2"></rect>
-                <rect width="32" height="4" y="12" rx="2"></rect>
-                <rect width="32" height="4" y="24" rx="2"></rect>
-              </g>
-              <text fill="#000638" font-family="Roboto" font-size="13" font-weight="400">
-                <tspan x="2" y="45" id="title_burger">Menu</tspan>
-              </text>
-            </g>
-          </svg>
-        </span>
-        <span id="close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45" role="img" aria-labelledby="title_close">
-            <g fill="none" fill-rule="evenodd" transform="translate(-1 -2)">
-              <g fill="#000638" fill-rule="nonzero" transform="translate(10 1)">
-                <rect width="32" height="4" x="-3" y="11" rx="2" transform="rotate(45 13 13)"></rect>
-                <rect width="32" height="4" x="-3" y="11" rx="2" transform="rotate(-45 13 13)"></rect>
-              </g>
-              <text fill="#000638" font-family="Roboto" font-size="13" font-weight="400">
-                <tspan x="3" y="45" id="title_close">Fermer</tspan>
-              </text>
-            </g>
-          </svg>
-        </span>
-      </div>
-      <div id="burgerNav">
-        <nav role="navigation">
-          <ul>
-            <li>
-              <a href="/tableaux-de-bord" rel="noopener" >
-                <span>Tableaux de bord publics</span>
-              </a>
-            </li>
-            <li>
-              <a href="/tableaux-de-bord-prives" rel="noopener" class="is-active">
-                <span>Tableaux de bord privés</span>
-              </a>
-            </li>
-            <li>
-              <a href="/inscription-newsletter" >
-                <i class="ri-mail-send-line ri-lg" aria-hidden="true"></i>
-                <span>Newsletter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://documentation.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)">
-                <span>Aide et assistance</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://plateforme-inclusion.notion.site/Actualit-s-du-service-pilotage-de-l-inclusion-bc33815555874210b161063b203639c8?mtm_campaign=Notion-Page-Actualités-accueil&mtm_kwd=Page-Actualités-accueil" rel="noopener" target="_blank" aria-label="Accéder à l'espace de actulaités (nouvel onglet)">
-                <span>Actualités</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="https://inclusion.beta.gouv.fr" class="is-plateforme" rel="noopener" target="_blank" aria-label="La Plateforme de l'inclusion (lien externe)">
-                <span>La plateforme</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://emplois.inclusion.beta.gouv.fr" class="is-emploi" rel="noopener" target="_blank" aria-label="Les emplois de l'inclusion (lien externe)">
-                <span>Les emplois</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://communaute.inclusion.beta.gouv.fr" class="is-communaute" rel="noopener" target="_blank" aria-label="La communauté de l'inclusion (lien externe)">
-                <span>La communauté</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://lemarche.inclusion.beta.gouv.fr" class="is-marche" rel="noopener" target="_blank" aria-label="Le pilotage de l'inclusion (lien externe)">
-                <span>Le marché</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://pilotage.inclusion.beta.gouv.fr" class="is-pilotage" rel="noopener" target="_blank" aria-label="Le marché de l'inclusion (lien externe)">
-                <span>Le pilotage</span>
-                <i class="ri-arrow-right-up-line ri-lg"></i>
-              </a>
-            </li>
-          </ul>
+  </section>
+  <section class="s-postheader d-none d-xl-block">
+    <div class="s-postheader__container container">
+      <div class="s-postheader__row row">
+        <div class="s-postheader__col col-12 d-flex align-items-center">
+          <nav role="navigation" aria-label="Navigation secondaire">
+            <ul>
+              <li>
+                <a href="/tableaux-de-bord" rel="noopener" >Tableaux de bord publics</a>
+              </li>
+              <li>
+                <a href="/tableaux-de-bord-prives" rel="noopener" class="is-active">Tableaux de bord privés</a>
+              </li>
+              <li>
+                <a href="https://plateforme-inclusion.notion.site/Actualit-s-du-service-pilotage-de-l-inclusion-bc33815555874210b161063b203639c8?mtm_campaign=Notion-Page-Actualités-accueil&mtm_kwd=Page-Actualités-accueil" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)">
+                  <span>Actualités</span>
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </section>
 </header>
-<section class="s-postheader d-none d-xl-block">
-  <div class="container s-postheader__container">
-      <div class="row">
-          <div class="col-12 s-postheader__col s-postheader__col--nav d-flex align-items-center">
-              <nav role="navigation">
-                  <ul>
-                      <li>
-                        <a href="https://documentation.inclusion.beta.gouv.fr/aide/pilotage/" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)">
-                          <span>Aide et assistance</span>
-                          <i class="ri-arrow-right-up-line ri-lg"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://plateforme-inclusion.notion.site/Actualit-s-du-service-pilotage-de-l-inclusion-bc33815555874210b161063b203639c8?mtm_campaign=Notion-Page-Actualités-accueil&mtm_kwd=Page-Actualités-accueil" rel="noopener" target="_blank" aria-label="Accéder à l'espace de documentation (nouvel onglet)">
-                          <span>Actualités</span>
-                          <i class="ri-arrow-right-up-line ri-lg"></i>
-                        </a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
-  </div>
-</section>
 
 
   <main id="main" role="main" class="s-main" tabindex="-1">
