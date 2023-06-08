@@ -64,7 +64,7 @@
         <div class="s-postheader__col col-12 d-flex align-items-center">
           <nav role="navigation" aria-label="Navigation secondaire">
             <ul>
-              <li><a href="/">Accueil</a></li>
+              <li><a href="/" <% if (locals.currentItem === 'accueil' ) { %>class="is-active"<% } %>>Accueil</a></li>
               <li>
                 <a href="/tableaux-de-bord" rel="noopener" <% if (locals.currentItem === 'tableaux-de-bord' ) { %>class="is-active"<% } %>>Tableaux de bord publics</a>
               </li>
