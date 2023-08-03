@@ -5,8 +5,7 @@
   <title>Le pilotage de l'inclusion</title>
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="title" content="Le pilotage de l'inclusion">
 <meta name="description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
@@ -30,7 +29,7 @@
 
 <body class="l-tableaux-de-bord" id="top">
 
-  <nav role="navigation" aria-label="Accès rapide" class="sr-only">
+  <nav role="navigation" aria-label="Accès rapide" class="visually-hidden">
   <ul>
     <li><a href="#nav-primary">Aller au menu principal</a></li>
     <li><a href="#main">Aller au contenu principal</a></li>
@@ -42,7 +41,7 @@
   <section class="s-header">
     <div class="s-header__container container">
       <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pr-0">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
           <a href="/" class="s-header__logo-ministere"><img src="./../images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
         <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
@@ -62,7 +61,7 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-bs-toggle="burger">
           <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
           <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
         </div>
@@ -128,11 +127,11 @@
 
   <main id="main" role="main" class="s-main" tabindex="-1">
 
-    <section class="c-breadcrumb c-breadcrumb--pilotage">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+            <nav class="c-breadcrumb" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Tableaux de bord privés</li>
@@ -166,7 +165,7 @@
               <div class="card-body">
                 <p>Je travaille pour la DGEFP, une DREETS, une DDETS</p>
               </div>
-              <div class="card-footer text-right">
+              <div class="card-footer text-end">
                 <a href="https://emplois.inclusion.beta.gouv.fr/login/labor_inspector" target="_blank" class="btn btn-ico btn-link stretched-link">
                   <span>Accéder à mes statistiques</span>
                   <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
@@ -182,7 +181,7 @@
               <div class="card-body">
                 <p>Je travaille pour un Conseil Départemental ou un Pôle emploi</p>
               </div>
-              <div class="card-footer text-right">
+              <div class="card-footer text-end">
                 <a href="https://emplois.inclusion.beta.gouv.fr/login/prescriber" target="_blank" class="btn btn-ico btn-link stretched-link">
                   <span>Accéder à mes statistiques</span>
                   <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
@@ -198,7 +197,7 @@
               <div class="card-body">
                 <p>Je travaille pour une SIAE, GEIQ, EA, …</p>
               </div>
-              <div class="card-footer text-right">
+              <div class="card-footer text-end">
                 <a href="https://emplois.inclusion.beta.gouv.fr/login/siae_staff" target="_blank" class="btn btn-ico btn-link stretched-link">
                   <span>Accéder à mes statistiques</span>
                   <i class="ri-external-link-line ri-lg" aria-hidden="true"></i>
@@ -288,7 +287,9 @@
 </footer>
 
 
-  <script type="text/javascript" src="./../javascripts/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./../javascripts/app.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.11.0/tarteaucitron.js"></script>
 <script type="text/javascript">
   tarteaucitron.init({
