@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import babel from 'gulp-babel';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import browserify from 'gulp-browserify';
@@ -7,21 +6,18 @@ import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import imagemin from 'gulp-imagemin';
-import gulpSass from 'gulp-sass';
-import nodeSass from 'node-sass';
+import sass from 'gulp-dart-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import cleanCSS from 'gulp-clean-css';
-import purgecss from 'gulp-purgecss';
-import ejs from'gulp-ejs';
+import ejs from 'gulp-ejs';
 import rename from'gulp-rename';
 import clean from 'gulp-clean';
 
-const sass = gulpSass(nodeSass);
 const server = browserSync.create();
 
 const paths = {
   distDir: './dist/',
-  srcImages: 'src/images/*.{jpg,jpeg,png,svg,ico}',
+  srcImages: 'src/images/**/*.{jpg,jpeg,png,svg,ico}',
   distImages: 'dist/images/',
   srcFonts: 'src/fonts/**/*',
   distFonts: 'dist/fonts/',
@@ -70,28 +66,8 @@ export function purgestyles() {
       )
       .pipe(sass())
       .pipe(cleanCSS())
-      .pipe(
-        purgecss({
-          content: [paths.srcHtml, paths.srcScripts],
-          safelist: [/^tarteaucitron/]
-        }),
-      )
       .pipe(gulp.dest(paths.distStyles))
   );
-}
-
-// Javascript Task
-export function scripts() {
-  return gulp.src(paths.srcScripts, {
-    sourcemaps: true
-  })
-    .pipe(plumber({
-      errorHandler: notifyOnError
-    }))
-    .pipe(browserify())
-    .pipe(uglify())
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest(paths.distScripts));
 }
 
 // Compress Images Task
@@ -102,14 +78,17 @@ export function images() {
     .pipe(plumber({
       errorHandler: notifyOnError
     }))
-    .pipe(imagemin({
-      optimizationLevel: 3,
-      progressive: true,
-      interlaced: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }]
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {cleanupIDs: true}
+        ]
+      })
+    ]))
     .pipe(gulp.dest(paths.distImages));
 }
 
@@ -117,6 +96,12 @@ export function images() {
 export function cname() {
   return gulp.src('CNAME')
     .pipe(gulp.dest(paths.distHtml));
+}
+
+// Copy the Scripts files
+export function scripts() {
+  return gulp.src(paths.srcScripts)
+    .pipe(gulp.dest(paths.distScripts));
 }
 
 // Copy the Font files
@@ -171,18 +156,23 @@ export function importItouThemeFonts() {
     .pipe(gulp.dest('src/fonts/'));
 }
 
+// Import Script from Itou Theme
+export function importItouThemeScripts() {
+  return gulp.src('./node_modules/itoutheme/dist/javascripts/**/*')
+    .pipe(gulp.dest('src/javascripts/'));
+}
+
 // Watch Task
 function watch() {
   gulp.watch(paths.srcHtml, gulp.series(html, reload));
-  gulp.watch(paths.srcScripts, gulp.series(scripts, reload));
   gulp.watch(paths.srcStyles, gulp.series(styles, reload));
   gulp.watch(paths.srcImages, gulp.series(images, reload));
 }
 
-const dev = gulp.series(cleandist, html, cname, scripts, styles, images, fonts, serve, watch);
+const dev = gulp.series(cleandist, html, cname, styles, scripts, images, fonts, serve, watch);
 gulp.task('dev', dev);
 
-const build = gulp.series(cleandist, html, cname, scripts, purgestyles, images, fonts);
+const build = gulp.series(cleandist, html, cname, purgestyles, scripts, images, fonts);
 gulp.task('build', build);
 
 export default dev;

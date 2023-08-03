@@ -6,8 +6,7 @@
     <title>Le pilotage de l'inclusion</title>
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="title" content="Le pilotage de l'inclusion">
 <meta name="description" content="Proposer des tableaux de bord prêts à l’emploi pour permettre aux acteurs de l’inclusion de prendre des décisions mieux éclairées, tout en réduisant le temps de collecte de données et de production d’indicateurs.">
@@ -30,7 +29,7 @@
   </head>
 
   <body class="l-accessibilite" id="top">
-    <nav role="navigation" aria-label="Accès rapide" class="sr-only">
+    <nav role="navigation" aria-label="Accès rapide" class="visually-hidden">
   <ul>
     <li><a href="#nav-primary">Aller au menu principal</a></li>
     <li><a href="#main">Aller au contenu principal</a></li>
@@ -42,7 +41,7 @@
   <section class="s-header">
     <div class="s-header__container container">
       <div class="s-header__row row">
-        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pr-0">
+        <div class="s-header__col s-header__col--logo-ministere col col-md-auto d-flex align-items-center pe-0">
           <a href="/" class="s-header__logo-ministere"><img src="./../images/logo-republique-francaise.svg" alt="Rébublique Française"></a>
         </div>
         <div class="s-header__col s-header__col--logo-service col-auto d-flex align-items-center px-0">
@@ -62,7 +61,7 @@
             </ul>
           </nav>
         </div>
-        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-toggle="burger">
+        <div class="s-header__col s-header__col--burger col d-flex align-items-center justify-content-end d-xl-none" data-bs-toggle="burger">
           <i class="ri-menu-line" id="open" role="button" tabindex="0" aria-label="Ouverture du menu de navigation principale pour mobile"></i>
           <i class="ri-close-line" id="close" role="button" tabindex="0" aria-label="Fermeture du menu de navigation principale pour mobile"></i>
         </div>
@@ -128,11 +127,11 @@
 
         <main id="main" role="main" class="s-main">
 
-          <section class="c-breadcrumb c-breadcrumb--pilotage">
+          <section>
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <nav class="c-breadcrumb c-breadcrumb--pilotage" aria-label="breadcrumb">
+                  <nav class="c-breadcrumb" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Mentions légales</li>
@@ -143,20 +142,20 @@
             </div>
           </section>
 
-          <section class="s-pageintro">
-            <div class="s-pageintro__container container">
-              <div class="s-pageintro__row row">
-                <div class="s-pageintro__col s-pageintro__col--title col-12">
+          <section class="s-title-01">
+            <div class="s-title-01__container container">
+              <div class="s-title-01__row row">
+                <div class="s-title-01__col  col-12">
                   <h1 class="h1"><strong>Mentions légales</strong></h1>
                 </div>
               </div>
             </div>
           </section>
 
-          <section class="s-pageoutro">
-            <div class="s-pageoutro__container container">
-              <div class="s-pageoutro__row row">
-                <div class="s-pageoutro__col col-12 col-lg-11">
+          <section class="s-section">
+            <div class="s-section__container container">
+              <div class="s-section__row row">
+                <div class="s-section__col col-12 col-lg-11">
                   <article>
                     <h2>Éditeur</h2>
                     <p>Le site « Le pilotage de l’inclusion » est édité par :</p>
@@ -308,7 +307,9 @@
 </footer>
 
 
-          <script type="text/javascript" src="./../javascripts/app.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./../javascripts/app.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@1.11.0/tarteaucitron.js"></script>
 <script type="text/javascript">
   tarteaucitron.init({
