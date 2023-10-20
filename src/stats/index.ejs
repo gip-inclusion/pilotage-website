@@ -47,13 +47,15 @@
         </div>
       </section>
 
+      <%- include('./../_sections/testimonial', {pathDepth: './..'}) %>
+
       <%- include('./../_sections/guide-tdb', {pathDepth: './..'}) %>
 
     </main>
 
     <%- include('./../_sections/footer', {pathDepth: './..'}) %>
 
-    <%- include('./../_partials/footer-scripts', {pathDepth: './..', hasTracking: false, hasIframeResizer: true }) %>
+    <%- include('./../_partials/footer-scripts', {pathDepth: './..', hasTracking: false, hasIframeResizer: true, hasTestimonial: true }) %>
 
   </body>
 
