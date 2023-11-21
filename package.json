@@ -1,5 +1,5 @@
 {
-  "name": "itoulanding",
+  "name": "itoupilotage",
   "version": "1.0.1",
   "description": "",
   "main": "gulpfile.babel.js",
@@ -15,7 +15,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.0",
     "remixicon": "^3.4.0",
-    "itoutheme": "github:betagouv/itou-theme#v1.1.0"
+    "itoutheme": "github:gip-inclusion/itou-theme#v1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
