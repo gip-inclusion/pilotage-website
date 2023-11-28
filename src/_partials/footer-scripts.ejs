@@ -59,8 +59,18 @@
 <% } %>
 
 <% if (locals.hasTallyEmbed === true) { %>
-  <script defer>
+  <script>
     Tally.loadEmbeds();
+
+    // Show embedTallyList after 15s
+    const embedTallyList = document.querySelectorAll('.s-embed--tally');
+    for (let i = 0, ii = embedTallyList.length; i < ii; i += 1) {
+      const thisEmbedTally = embedTallyList[i];
+
+      setTimeout(() => {
+        thisEmbedTally.classList.add('d-block');
+      }, 15 * 1000);
+    }
   </script>
 <% } %>
 
