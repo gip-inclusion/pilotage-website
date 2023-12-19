@@ -29,7 +29,7 @@
                             </p>
                         </div>
                         <div class="col-12 col-md-auto mt-2 mt-md-0 d-flex align-items-center justify-content-center">
-                          <a href="https://www.inclusion-demain.fr/" target="_blank" class="btn btn-sm btn-primary has-external-link">Je m'inscris</a>
+                          <a href="https://www.inclusion-demain.fr/" target="_blank" class="btn btn-sm btn-primary has-external-link" data-matomo-event="true" data-matomo-category="promotion-partenaires" data-matomo-action="clic" data-matomo-option="inclusion-demain">Je m'inscris</a>
                         </div>
                     </div>
                 </div>
@@ -201,66 +201,28 @@
 
     <%- include('./_partials/footer-scripts', {pathDepth: '.', hasTracking: true, hasTestimonial: true }) %>
 
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script>
+    <!-- <script>
       async function fetchMetabaseHPData() {
         try {
           const response = await fetch(
             "https://stats.inclusion.beta.gouv.fr/api/public/dashboard/a76f4f0e-08e8-4303-8562-1442f0381b12", {
               mode: "no-cors",
               headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
               },
             }
           );
           if (!response.ok) {
-            throw new Error("fetch: La réponse n'est pas OK");
+            throw new Error("Réponse OK");
           }
           const data = await response.json();
           console.log(data);
         } catch (error) {
-          console.error("fetch: Un problème est survenu lors de la récupération :", error);
+          console.error("Un problème est survenu lors de la récupération :", error);
         }
       };
       fetchMetabaseHPData();
-
-
-      var config = {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Cache-Control': 'no-cache'
-      };
-      var axiosOptions = {
-          method: 'GET',
-          url: 'https://stats.inclusion.beta.gouv.fr/api/public/dashboard/a76f4f0e-08e8-4303-8562-1442f0381b12',
-          headers: config
-      };
-      axios(axiosOptions).then(response => {
-          console.log("axios: " + response.data);
-      }).catch(err => {
-          console.error("axios: " + err);
-      });
-
-
-      var settings = {
-        'cache': false,
-        'dataType': "jsonp",
-        "async": true,
-        "crossDomain": true,
-        "url": "https://stats.inclusion.beta.gouv.fr/api/public/dashboard/a76f4f0e-08e8-4303-8562-1442f0381b12",
-        "method": "GET",
-        "headers": {
-          "accept": "application/json",
-          "Access-Control-Allow-Origin":"*"
-        }
-      }
-
-      $.ajax(settings).done(function (response) {
-        console.log('ajax: ' + response);
-      });
     </script> -->
   </body>
 
