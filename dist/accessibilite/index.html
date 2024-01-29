@@ -50,10 +50,18 @@
         <div class="s-header__col s-header__col--nav col d-none d-md-inline-flex d-md-flex align-items-center justify-content-end">
           <nav role="navigation" id="nav-primary" aria-label="Navigation principale">
             <ul>
-              <li>
-                <a href="https://aide.pilotage.inclusion.beta.gouv.fr/" class="btn btn-link" rel="noopener" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion (lien externe)">
-                  Besoin d'aide ?
-                </a>
+              <li class="dropdown">
+                  <button type="button" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
+                  <div class="dropdown-menu" id="helpDropdown">
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/requests/new" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion (lien externe)">Nous contacter</a>
+                          </li>
+                          <li>
+                              <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (lien externe)">Documentation</a>
+                          </li>
+                      </ul>
+                  </div>
               </li>
               <li>
                 <a href="/inscription-lettre-information" class="btn btn-outline-primary">Infolettre</a>
@@ -70,10 +78,18 @@
         <div id="burgerNav">
           <nav role="navigation" aria-label="Navigation principale pour mobile">
             <ul>
-              <li>
-                <a href="https://aide.pilotage.inclusion.beta.gouv.fr/" class="btn btn-link mh-auto p-0">
-                  Besoin d'aide ?
-                </a>
+              <li class="dropdown">
+                <button type="button" class="btn btn-link dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-controls="helpDropdown" aria-expanded="false">Besoin d'aide ?</button>
+                <div class="dropdown-menu" id="helpDropdown">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr/requests/new" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Aide et assistance du pilotage de l'inclusion (lien externe)">Nous contacter</a>
+                    </li>
+                    <li>
+                      <a href="https://aide.pilotage.inclusion.beta.gouv.fr/hc/fr" rel="noopener" class="dropdown-item has-external-link" target="_blank" aria-label="Accéder à l'espace de documentation (lien externe)">Documentation</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a href="/inscription-lettre-information" class="btn btn-outline-primary">Infolettre</a>
